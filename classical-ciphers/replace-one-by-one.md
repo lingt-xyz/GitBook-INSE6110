@@ -7,6 +7,8 @@ Letters of plaintext are replaced by other letters or by numbers or symbols.
 
 {% hint style="info" %}
 Why? To reduce information.
+
+e.g.: If there is a capital letter, this could mean this letter is a beginning of a sentence.
 {% endhint %}
 
 Example:
