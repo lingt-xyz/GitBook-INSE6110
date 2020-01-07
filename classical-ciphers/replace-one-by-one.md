@@ -3,7 +3,7 @@
 Letters of plaintext are replaced by other letters or by numbers or symbols.
 
 * No punctuations.
-* No differentiation of capital and lower case letters.
+* No differentiation of capital and lowercase letters.
 
 {% hint style="info" %}
 Why? To reduce information.
