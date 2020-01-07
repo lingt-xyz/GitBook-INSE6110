@@ -25,14 +25,6 @@ Cryptography is the science that enables Alice and Bob to communicate securely i
 
 Solutions: Protocols between Alice and Bob At least one of Alice or Bob needs to know more \(or can do more\) than Eve
 
-## Attacker \(Cryptanalyst\) Model
-
-Passive: The attacker does not modify the data, only monitors the communication. It threatens confidentiality.
-
-* Example: listen to the communication between Alice and Bob, and if it’s encrypted try to decrypt it. 
-
-Active: The attacker is actively involved in inserting, deleting, or modifying data. It threatens authentication and confidentiality.
-
 ## Terminology
 
 * plaintext - the original message
@@ -41,6 +33,14 @@ Active: The attacker is actively involved in inserting, deleting, or modifying d
 * key - info used in cipher known only to sender/receiver
 * encipher \(encrypt\) - converting plaintext to ciphertext
 * decipher \(decrypt\) - recovering ciphertext from plaintext
+
+## Attacker \(Cryptanalyst\) Model
+
+Passive: The attacker does not modify the data, only monitors the communication. It threatens confidentiality.
+
+* Example: listen to the communication between Alice and Bob, and if it’s encrypted try to decrypt it. 
+
+Active: The attacker is actively involved in inserting, deleting, or modifying data. It threatens authentication and confidentiality.
 
 ## Kerckhoff’s Principle
 
