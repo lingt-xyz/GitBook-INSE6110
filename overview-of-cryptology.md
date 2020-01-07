@@ -7,7 +7,7 @@ Cryptology is the science of hiding:
 1. cryptography
 2. cryptanalysis
 
-## Goals of Cryptography 
+## Goals of Cryptography
 
 Cryptography is the science that enables Alice and Bob to communicate securely in the presence of Eve.
 
@@ -27,12 +27,12 @@ Solutions: Protocols between Alice and Bob At least one of Alice or Bob needs to
 
 ## Terminology
 
-* plaintext - the original message
-* ciphertext - the coded message
-* cipher - algorithm for transforming plaintext to ciphertext
-* key - info used in cipher known only to sender/receiver
-* encipher \(encrypt\) - converting plaintext to ciphertext
-* decipher \(decrypt\) - recovering ciphertext from plaintext
+* **plaintext** - the original message
+* **ciphertext** - the coded message
+* **cipher** - algorithm for transforming plaintext to ciphertext
+* **key** - info used in cipher known only to sender/receiver
+* **encipher** \(encrypt\) - converting plaintext to ciphertext
+* **decipher** \(decrypt\) - recovering ciphertext from plaintext
 
 ## Attacker \(Cryptanalyst\) Model
 
@@ -50,7 +50,7 @@ Active: The attacker is actively involved in inserting, deleting, or modifying d
    * Look at history of examples.
    * Better to have scrutiny by open experts.
 
-## Attacks on encryption schemes 
+## Attacks on encryption schemes
 
 * Ciphertext-only attack: deduce the decryption key or plaintext by only observing ciphertext. 
 * Known-plaintext attack： using a quantity of plaintext and corresponding ciphertext. 
