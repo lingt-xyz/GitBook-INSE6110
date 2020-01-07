@@ -32,7 +32,7 @@ Solutions: Protocols between Alice and Bob At least one of Alice or Bob needs to
 * **cipher** - algorithm for transforming plaintext to ciphertext
 * **key** - info used in cipher known only to sender/receiver
 * **encipher** \(encrypt\) - converting plaintext to ciphertext
-* **decipher** \(decrypt\) - recovering ciphertext from plaintext
+* **decipher** \(decrypt\) - recovering cipher-text from plain-text
 
 ## Attacker \(Cryptanalyst\) Model
 
