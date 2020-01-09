@@ -6,6 +6,6 @@
 
 ## Classical Ciphers
 
-* [Replace one by one](classical-ciphers/replace-one-by-one.md)
-* [Caesar Cipher](classical-ciphers/caesar-cipher.md)
+* [Substitution](classical-ciphers/substitution.md)
+* [Transposition](classical-ciphers/transposition.md)
 
