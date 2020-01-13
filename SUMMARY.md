@@ -3,6 +3,7 @@
 * [Outline](README.md)
 * [Overview of Cryptology](overview-of-cryptology.md)
 * [Symmetric Key](symmetric-key.md)
+* [Modular Inverse](modular-inverse.md)
 
 ## Classical Ciphers
 
