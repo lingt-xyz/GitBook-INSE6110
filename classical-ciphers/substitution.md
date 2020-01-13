@@ -1,39 +1,85 @@
 # Substitution
 
-Letters of plaintext are replaced by other letters or by numbers or symbols.
+In a substitution cipher, letters of plaintext are replaced by other letters or numbers or symbols.
 
 * No punctuations.
-* No differentiation of capital and lowercase letters.
+* No differentiation between capital and lowercase letters.
 
 {% hint style="info" %}
-Why? To reduce information.
+Why? To reduce information exposure.
 
 e.g.: If there is a capital letter, this could mean this letter is a beginning of a sentence.
 {% endhint %}
 
-Example:
-
-| A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 |
-
-Caesar Cipher
-
-
-
-Shift letters by a given key.
-
-Defined over $$Z_{26}$$ as follows:
-
-| A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 |
-
 ## Algorithm
 
-1. Convert each letter in the plaintext $$P$$ to its corresponding number.
-2. Shift the number by the given key $$K$$ and do a module over the size of the space.
-3. The output of the module is the ciphertext.
+Define plaintext space and cipher space over $$\Bbb{Z}_{26}$$:
 
-## Example
+| A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 |
+
+Let $$P = C = \Bbb{Z}_{26}$$.
+
+## No shifting
+
+* Letters of plaintext are replaced by other letters or numbers or symbols.
+
+## Caesar Cipher
+
+* $$e_K(P) = (P + 3) \pmod {26}$$ 
+* $$d_K(C) = (C - 3) \pmod {26}$$
+
+## Shift Cipher
+
+Define $$K$$where $$0 ≤ K ≤ 25$$.
+
+* $$e_K(P) = (P + K) \pmod {26}$$
+* $$d_K(C) = (C - K) \pmod {26}$$
+
+### Cryptanalysis
+
+* Key space: 26
+* Exhaustive search 26 possible keys.
+
+## Substitution Ciphers
+
+Substitute a plaintext with another plaintext. E.g.: substitute $$A$$with $$B$$and substitute $$B$$with $$E$$, and continue on.
+
+* $$e_{\Pi}(P)=\Pi(P)$$
+* $$d_{\Pi}(C)={\Pi}^{-1}(C)$$
+
+### Cryptanalysis
+
+* Key space: $$26!\approx2^{88}$$
+* Exhaustive search is infeasible.
+
+Substitution ciphers preserve language statistics.
+
+* Frequency analysis attacks
+
+## Affine cipher
+
+* $$e_K(X)=Y=(\alpha X +\beta)\pmod {26}$$
+* $$d_K(Y)=X={\alpha}^{-1}(Y-\beta)\pmod{26}$$
+* $$K=(\alpha,\beta), \text{ and }\alpha,\beta\in \Bbb{Z}_{26}$$
+
+### Valid Key Space
+
+* $$\beta$$can be any number in $$\Bbb{Z}_{26}$$, so there are$$26$$possibilities.
+* Since $$\alpha^{-1}$$has to exist, only integer in $$\Bbb{Z}^{26}$$such that $$gcd(\alpha,26)=1$$can be selected.
+  * The candidates are $$\{1,3,5,7,9,11,15,17,19,21,23,25\}$$.
+* Key space: $$26\times12=312$$
+
+### Cryptanalysis
+
+#### Ciphertext only
+
+exhaustive search or frequency analysis.
+
+#### Known plaintext
+
+
+
+#### Chosen plaintext
 
