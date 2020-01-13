@@ -1,7 +1,5 @@
 # Substitution
 
-## Substitution
-
 In a substitution cipher, letters of plaintext are replaced by other letters or numbers or symbols.
 
 * No punctuations.
@@ -13,30 +11,21 @@ Why? To reduce information exposure.
 e.g.: If there is a capital letter, this could mean this letter is a beginning of a sentence.
 {% endhint %}
 
-### Algorithm
+## Algorithm
 
-Define plaintext space and cipher space over $$Z_{26}$$:
+Define plaintext space and cipher space over $$\Bbb{Z}_{26}$$:
 
 | A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 |
 
-Let $$P = C = Z_{26}$$.
-
-Define $$K$$where $$0 ≤ K ≤ 25$$.
-
-* $$e_K(P) = (P + K) \pmod {26}$$ 
-* $$d_K(C) = (C - K) \pmod {26}$$
+Let $$P = C = \Bbb{Z}_{26}$$.
 
 ## No shifting
-
-$$K=0$$
 
 * Letters of plaintext are replaced by other letters or numbers or symbols.
 
 ## Caesar Cipher
-
-$$K=3$$
 
 * $$e_K(P) = (P + 3) \pmod {26}$$ 
 * $$d_K(C) = (C - 3) \pmod {26}$$
@@ -55,13 +44,10 @@ Define $$K$$where $$0 ≤ K ≤ 25$$.
 
 ## Substitution Ciphers
 
-Substitute a plaintext with another plaintext.
+Substitute a plaintext with another plaintext. E.g.: substitute $$A$$with $$B$$and substitute $$B$$with $$E$$, and continue on.
 
-* E.g.: substitute $$A$$with $$B$$and substitute $$B$$with $$E$$, and continue on.
-
-$$e_{\Pi}(P)=\Pi(P)$$
-
-$$d_{\Pi}(C)={\Pi}^{-1}(C)$$
+* $$e_{\Pi}(P)=\Pi(P)$$
+* $$d_{\Pi}(C)={\Pi}^{-1}(C)$$
 
 ### Cryptanalysis
 
@@ -71,4 +57,10 @@ $$d_{\Pi}(C)={\Pi}^{-1}(C)$$
 Substitution ciphers preserve language statistics.
 
 * Frequency analysis attacks
+
+## Affine cipher
+
+* $$e_K(X)=Y=(\alpha X +\beta)\pmod {26}$$
+* $$d_K(Y)=X={\alpha}^{-1}(Y-\beta)\pmod{26}$$
+* $$K=(\alpha,\beta), \text{ and }\alpha,\beta\in \Bbb{Z}_{26}$$
 
