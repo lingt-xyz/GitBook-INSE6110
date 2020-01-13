@@ -9,3 +9,5 @@
 * [Substitution](classical-ciphers/substitution.md)
 * [Transposition](classical-ciphers/transposition.md)
 
+## Number Theory
+
