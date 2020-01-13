@@ -64,3 +64,12 @@ Substitution ciphers preserve language statistics.
 * $$d_K(Y)=X={\alpha}^{-1}(Y-\beta)\pmod{26}$$
 * $$K=(\alpha,\beta), \text{ and }\alpha,\beta\in \Bbb{Z}_{26}$$
 
+### Valid Key Space
+
+* $$\beta$$can be any number in $$\Bbb{Z}_{26}$$, so there are$$26$$possibilities.
+* Since $$\alpha^{-1}$$has to exist, only integer in $$\Bbb{Z}^{26}$$such that $$gcd(\alpha,26)=1$$can be selected.
+  * The candidates are $$\{1,3,5,7,9,11,15,17,19,21,23,25\}$$.
+* Key space: $$26\times12=312$$
+
+### Cryptanalysis
+
