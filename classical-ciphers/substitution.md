@@ -73,3 +73,9 @@ Substitution ciphers preserve language statistics.
 
 ### Cryptanalysis
 
+#### Ciphertext only
+
+exhaustive search or frequency analysis.
+
+#### Known plaintext
+
