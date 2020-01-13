@@ -1,39 +1,74 @@
 # Substitution
 
-Letters of plaintext are replaced by other letters or by numbers or symbols.
+## Substitution
+
+In a substitution cipher, letters of plaintext are replaced by other letters or numbers or symbols.
 
 * No punctuations.
-* No differentiation of capital and lowercase letters.
+* No differentiation between capital and lowercase letters.
 
 {% hint style="info" %}
-Why? To reduce information.
+Why? To reduce information exposure.
 
 e.g.: If there is a capital letter, this could mean this letter is a beginning of a sentence.
 {% endhint %}
 
-Example:
+### Algorithm
+
+Define plaintext space and cipher space over $$Z_{26}$$:
 
 | A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 |
 
-Caesar Cipher
+Let $$P = C = Z_{26}$$.
 
+Define $$K$$where $$0 ≤ K ≤ 25$$.
 
+* $$e_K(P) = (P + K) \pmod {26}$$ 
+* $$d_K(C) = (C - K) \pmod {26}$$
 
-Shift letters by a given key.
+## No shifting
 
-Defined over $$Z_{26}$$ as follows:
+$$K=0$$
 
-| A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 |
+* Letters of plaintext are replaced by other letters or numbers or symbols.
 
-## Algorithm
+## Caesar Cipher
 
-1. Convert each letter in the plaintext $$P$$ to its corresponding number.
-2. Shift the number by the given key $$K$$ and do a module over the size of the space.
-3. The output of the module is the ciphertext.
+$$K=3$$
 
-## Example
+* $$e_K(P) = (P + 3) \pmod {26}$$ 
+* $$d_K(C) = (C - 3) \pmod {26}$$
+
+## Shift Cipher
+
+Define $$K$$where $$0 ≤ K ≤ 25$$.
+
+* $$e_K(P) = (P + K) \pmod {26}$$
+* $$d_K(C) = (C - K) \pmod {26}$$
+
+### Cryptanalysis
+
+* Key space: 26
+* Exhaustive search 26 possible keys.
+
+## Substitution Ciphers
+
+Substitute a plaintext with another plaintext.
+
+* E.g.: substitute $$A$$with $$B$$and substitute $$B$$with $$E$$, and continue on.
+
+$$e_{\Pi}(P)=\Pi(P)$$
+
+$$d_{\Pi}(C)={\Pi}^{-1}(C)$$
+
+### Cryptanalysis
+
+* Key space: $$26!\approx2^{88}$$
+* Exhaustive search is infeasible.
+
+Substitution ciphers preserve language statistics.
+
+* Frequency analysis attacks
 
