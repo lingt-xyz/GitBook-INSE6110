@@ -19,11 +19,13 @@ Cryptography is the science that enables Alice and Bob to communicate securely i
    * Entity authentication \(Identification\) 
      * People who would see should be who should see.
    * Message authentication \(Data origin authentication\)
-     * Data should be from where is should be.
+     * Data should be from where it should come from.
 4. Non-repudiation
    * Prevention of denial of previous commitments or actions 
 
-Solutions: Protocols between Alice and Bob At least one of Alice or Bob needs to know more \(or can do more\) than Eve
+#### Solution
+
+Protocols between Alice and Bob At least one of Alice or Bob needs to know more \(or can do more\) than Eve
 
 ## Terminology
 
@@ -36,11 +38,15 @@ Solutions: Protocols between Alice and Bob At least one of Alice or Bob needs to
 
 ## Attacker \(Cryptanalyst\) Model
 
-Passive: The attacker does not modify the data, only monitors the communication. It threatens confidentiality.
+#### Passive
+
+The attacker does not modify the data, only monitors the communication. It threatens confidentiality.
 
 * Example: listen to the communication between Alice and Bob, and if it’s encrypted try to decrypt it. 
 
-Active: The attacker is actively involved in inserting, deleting, or modifying data. It threatens authentication and confidentiality.
+#### Active
+
+The attacker is actively involved in inserting, deleting, or modifying data. It threatens authentication and confidentiality.
 
 ## Kerckhoff’s Principle
 
