@@ -7,8 +7,8 @@
 
 ## Classical Ciphers
 
-* [Substitution](classical-ciphers/substitution.md)
-* [Transposition](classical-ciphers/transposition.md)
+* [Stream Cipher](classical-ciphers/stream-cipher.md)
+* [Block Cipher](classical-ciphers/block-cipher.md)
 
 ## Number Theory
 
