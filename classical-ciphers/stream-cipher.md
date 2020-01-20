@@ -82,7 +82,11 @@ exhaustive search or frequency analysis.
 
 #### Known plaintext
 
+two letters in the plaintext and corresponding ciphertext letters would suffice to find the key.
 
+Because there are only two variables: $$\alpha,\beta$$
 
 #### Chosen plaintext
+
+The first character of the ciphertext will be equal to $$0\cdot \alpha + \beta = \beta$$ and the second will be $$\alpha + \beta$$.
 
