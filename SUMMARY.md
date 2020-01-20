@@ -7,6 +7,7 @@
 ## Number Theory
 
 * [Modular Inverse](modular-inverse.md)
+* [GCD](gcd.md)
 
 ## Classical Ciphers
 
