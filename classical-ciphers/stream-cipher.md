@@ -88,5 +88,7 @@ Because there are only two variables: $$\alpha,\beta$$
 
 #### Chosen plaintext
 
+Choose$$A=0$$and$$B=1$$.
+
 The first character of the ciphertext will be equal to $$0\cdot \alpha + \beta = \beta$$ and the second will be $$\alpha + \beta$$.
 
