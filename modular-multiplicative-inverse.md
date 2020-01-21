@@ -5,24 +5,26 @@
 A **modular multiplicative inverse** of an integer $$\alpha$$ with respect to the modulus $$N$$ is an integer $$x$$ such that
 
 $$
-ax \equiv 1 \pmod{N}
+\alpha x \equiv 1 \pmod{N}
 $$
 
 That is
 
 $$
-x\equiv a^{-1}\pmod{N}
+x\equiv \alpha^{-1}\pmod{N}
 $$
 
 To be able have a solution, $$gcd(\alpha,N)=1$$.
 
 ## Algorithm
 
-* $$R_i$$is the reminder.
-* $$S_i=S_{i-2}-S_{i-1}\times D_{i-1}, \text{ for }i\geq2$$
-* $$S_0=0,S_1=1$$
+1. Verify that $$gcd(\alpha,N)=1$$.
+2. Caculate the multiplicative inverse by the following approch.
+   * $$R_i$$is the reminder.
+   * $$S_i=S_{i-2}-S_{i-1}\times D_{i-1}, \text{ for }i\geq2$$
+   * $$S_0=0,S_1=1$$
 
-### Examples
+## Examples
 
 ### $$3^{-1}\pmod{26}$$
 
