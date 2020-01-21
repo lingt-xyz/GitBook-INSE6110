@@ -7,7 +7,7 @@
 ## Number Theory
 
 * [Modular multiplicative inverse](modular-multiplicative-inverse.md)
-* [GCD](gcd.md)
+* [Modular exponentiation](modular-exponentiation.md)
 * [Euler's phi function](eulers-phi-function.md)
 
 ## Classical Ciphers
