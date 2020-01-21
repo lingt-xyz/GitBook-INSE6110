@@ -26,7 +26,9 @@ To be able have a solution, $$gcd(\alpha,N)=1$$.
 
 ## Examples
 
-### $$3^{-1}\pmod{26}$$
+### Example 1
+
+$$3^{-1}\pmod{26}$$
 
 | $$R_i$$ | $$D_i$$ |  | $$S_i$$ |
 | :--- | :--- | :--- | :--- |
@@ -39,7 +41,9 @@ The last $$R_i$$is $$1$$, that means $$gcd(3,26)=1$$.
 
 $$9\pmod{26}\equiv 9\equiv 3^{-1}\pmod{26}$$
 
-### $$7^{-1}\pmod{26}$$
+### Example 2
+
+$$7^{-1}\pmod{26}$$
 
 | $$R_i$$ | $$D_i$$ |  | $$S_i$$ |
 | :--- | :--- | :--- | :--- |
@@ -53,7 +57,9 @@ The last $$R_i$$is $$1$$, that means $$gcd(7,26)=1$$.
 
 $$-11\pmod{26}\equiv15\equiv7^{-1}\pmod{26}$$
 
-### $${121}^{-1}\pmod{803}$$
+### Example 3
+
+$${121}^{-1}\pmod{803}$$
 
 | $$R_i$$ | $$D_i$$ |
 | :--- | :--- |
@@ -67,7 +73,27 @@ $$-11\pmod{26}\equiv15\equiv7^{-1}\pmod{26}$$
 
 $$gcd(121,803)=11\neq1$$, so there is no solution.
 
-### $${160}^{-1}\pmod{841}$$
+### Example 4
 
-### table
+$${160}^{-1}\pmod{841}$$
+
+| $$R_i$$ | $$D_i$$ | $$S_i$$ |
+| :--- | :--- | :--- |
+| 841 |  | 0 |
+| 160 | 5 | 1 |
+| 41 | 3 | $$0-1\times5=-5$$ |
+| 37 | 1 | $$1-(-5)\times3=16$$ |
+| 4 | 9 | $$-5-16\times1=-21$$ |
+| 1 |  | $$16-(-21\times9)=205$$ |
+
+The last $$R_i$$is $$1$$, that means $$gcd(160,841)=1$$.
+
+$$205\pmod{841}\equiv205\equiv{160}^{-1}\pmod{841}$$
+
+### More Examples
+
+* $$14\equiv 5^{-1}\pmod{23}$$
+* $$67\equiv {111}^{-1}\pmod{143}$$
+
+
 
