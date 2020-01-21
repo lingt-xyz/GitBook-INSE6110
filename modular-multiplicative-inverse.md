@@ -35,6 +35,8 @@ To be able have a solution, $$gcd(\alpha,N)=1$$.
 | 2 | 1 | $$3/2=1,3\%2=1$$ | $$0-1\times8=-8$$ |
 | 1 |  |  | $$1-(-8)\times 1=9$$ |
 
+The last $$R_i$$is $$1$$, that means $$gcd(3,26)=1$$.
+
 $$9\pmod{26}\equiv 9\equiv 3^{-1}\pmod{26}$$
 
 ### $$7^{-1}\pmod{26}$$
@@ -46,6 +48,8 @@ $$9\pmod{26}\equiv 9\equiv 3^{-1}\pmod{26}$$
 | 5 | 1 | $$7/5=1,7\%5=2$$ | $$0-1\times3=-3$$ |
 | 2 | 2 | $$5/2=2,5\%2=1$$ | $$1-(-3)\times 1=4$$ |
 | 1 |  |  | $$(-3)-(4)\times(2)=-11$$ |
+
+The last $$R_i$$is $$1$$, that means $$gcd(7,26)=1$$.
 
 $$-11\pmod{26}\equiv15\equiv7^{-1}\pmod{26}$$
 
