@@ -6,7 +6,7 @@
 
 ## Number Theory
 
-* [Modular multiplicative inverse](modular-inverse.md)
+* [Modular multiplicative inverse](modular-multiplicative-inverse.md)
 * [GCD](gcd.md)
 * [Euler's phi function](eulers-phi-function.md)
 

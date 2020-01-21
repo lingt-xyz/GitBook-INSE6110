@@ -1,20 +1,36 @@
-# Modular Inverse
+# Modular multiplicative inverse
+
+## Definition
+
+A **modular multiplicative inverse** of an integer $$\alpha$$ is an integer $$x$$ such that
+
+$$
+ax \equiv 1 \pmod{m}
+$$
+
+That is
+
+$$
+x\equiv a^{-1}\pmod{m}
+$$
+
+## Algorithm
 
 * $$R_i$$is the reminder.
 * $$S_i=S_{i-2}-S_{i-1}\times D_{i-1}$$
 
-## e.g.
+### Examples
 
 ### $$3^{-1}\pmod{26}$$
 
 | $$R_i$$ | $$D_i$$ |  | $$S_i$$ |
 | :--- | :--- | :--- | :--- |
 | 26 |  |  | 0 |
-| 3 | 8 | $$3\times8+2=26$$ | 1 |
-| 2 | 1 | $$2\times1+1=3$$ | $$0-1\times8=-8$$ |
+| 3 | 8 | $$26/3=8,26\%3=2$$ | 1 |
+| 2 | 1 | $$3/2=1,3\%2=1$$ | $$0-1\times8=-8$$ |
 | 1 |  |  | $$1-(-8)\times 1=9$$ |
 
-$$9\pmod{26}=9=3^{-1}$$
+$$9\pmod{26}\equiv 9\equiv 3^{-1}\pmod{26}$$
 
 ### $$7^{-1}\pmod{26}$$
 
