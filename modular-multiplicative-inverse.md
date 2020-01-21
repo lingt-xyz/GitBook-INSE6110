@@ -17,7 +17,8 @@ $$
 ## Algorithm
 
 * $$R_i$$is the reminder.
-* $$S_i=S_{i-2}-S_{i-1}\times D_{i-1}$$
+* $$S_i=S_{i-2}-S_{i-1}\times D_{i-1}, \text{ for }i\geq2$$
+* $$S_0=0,S_1=2$$
 
 ### Examples
 
