@@ -8,6 +8,7 @@
 
 * [Modular Inverse](modular-inverse.md)
 * [GCD](gcd.md)
+* [Euler's phi function](eulers-phi-function.md)
 
 ## Classical Ciphers
 
