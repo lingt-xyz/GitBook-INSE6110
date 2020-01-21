@@ -2,17 +2,19 @@
 
 ## Definition
 
-A **modular multiplicative inverse** of an integer $$\alpha$$ is an integer $$x$$ such that
+A **modular multiplicative inverse** of an integer $$\alpha$$ with respect to the modulus $$N$$ is an integer $$x$$ such that
 
 $$
-ax \equiv 1 \pmod{m}
+ax \equiv 1 \pmod{N}
 $$
 
 That is
 
 $$
-x\equiv a^{-1}\pmod{m}
+x\equiv a^{-1}\pmod{N}
 $$
+
+To be able have a solution, $$gcd(\alpha,N)=1$$.
 
 ## Algorithm
 
