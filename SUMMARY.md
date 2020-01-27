@@ -14,4 +14,5 @@
 
 * [Stream Cipher](classical-ciphers/stream-cipher.md)
 * [Block Cipher](classical-ciphers/block-cipher.md)
+* [Practice 1](practice-1.md)
 
