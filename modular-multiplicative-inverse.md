@@ -14,12 +14,12 @@ $$
 x\equiv \alpha^{-1}\pmod{N}
 $$
 
-To be able have a solution, $$gcd(\alpha,N)=1$$.
+To be able to have a solution, $$gcd(\alpha,N)=1$$.
 
 ## Algorithm
 
 1. Verify that $$gcd(\alpha,N)=1$$.
-2. Caculate the multiplicative inverse by the following approch.
+2. Calculate the multiplicative inverse by the following approach.
    * $$R_i$$is the reminder.
    * $$S_i=S_{i-2}-S_{i-1}\times D_{i-1}, \text{ for }i\geq2$$
    * $$S_0=0,S_1=1$$
