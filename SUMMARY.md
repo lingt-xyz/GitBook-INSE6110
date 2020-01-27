@@ -9,10 +9,11 @@
 * [Modular multiplicative inverse](modular-multiplicative-inverse.md)
 * [Modular exponentiation](modular-exponentiation.md)
 * [Euler's phi function](eulers-phi-function.md)
+* [Practice 1](practice-1.md)
 
 ## Classical Ciphers
 
 * [Stream Cipher](classical-ciphers/stream-cipher.md)
 * [Block Cipher](classical-ciphers/block-cipher.md)
-* [Practice 1](practice-1.md)
+* [Diffie-Hellman](diffie-hellman.md)
 
