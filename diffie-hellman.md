@@ -1,8 +1,28 @@
 # Diffie-Hellman
 
-![](.gitbook/assets/d_h_key.png)
+## Deffie-Hellman three passes
 
+### Algorithm
 
+* $$p$$: a large prime integer, public
+* $$a_1$$: Alice's private key
+* $$a_2$$: $$a_2\equiv {a_1}^{-1}\pmod {p-1}$$
+* $$b_1$$: Bob's private key
+* $$b_2$$: $$b_2\equiv {b_1}^{-1}\pmod {p-1}$$
+* $$m$$: message to be passed between Alice and Bob
+
+### Entryption: Three passes
+
+* Pass 1: Alice to Bob
+  * $$m^{a_1}\pmod p$$
+* Pass 2: Bob to Alice
+  * $$(m^{a_1}\pmod p)^{b_1}\pmod p\equiv m^{a_1b_1}\pmod p$$
+* Pass 3: Alice to Bob
+  * $$(m^{a_1b_1}\pmod p)^{a_2}\pmod p\equiv m^{a_1b_1a_2}\pmod p$$
+
+### Decryption
+
+$$(m^{a_1b_1a_2}\pmod p)^{b_2}\pmod p\equiv m^{a_1b_1a_2b_2}\pmod p\equiv m$$
 
 ## Algorithm
 
