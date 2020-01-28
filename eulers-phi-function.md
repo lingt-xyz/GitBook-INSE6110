@@ -8,13 +8,17 @@ $$
 \Phi(p)=p-1
 $$
 
-Therefore, if $$gcd(a,p)=1$$,
+If $$p,q$$are prime numbers, and $$N=pq$$,
+
+$$
+a^{\Phi(N)}\equiv (p-1)(q-1)
+$$
+
+If $$gcd(a,p)=1$$,
 
 $$
 a^{\Phi(p)}\equiv 1\pmod p
 $$
-
-## Examples
 
 
 
