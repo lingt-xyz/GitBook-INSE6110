@@ -38,10 +38,34 @@ $$
 
 ## Examples
 
+### Q1
+
 $$
 x=5 \pmod {11}\\
 x=3 \pmod 7
 $$
 
 $$\begin{align}x&=aqq'+bpp'\pmod{pq}\\ &=5\times7\times\big(7^{-1}\pmod{11}\big)+3\times11\times\big(11^{-1}\pmod{7}\big)\pmod{11\times7}\\ &=5\times7\times8+3\times11\times2 \pmod{11\times7}\\ &=38\pmod{77}\end{align}$$
+
+### Q2
+
+$$
+x=7 \pmod {5}\\
+x=11 \pmod 3\\
+x=10 \pmod {13}
+$$
+
+$$
+\left.
+\begin{array}{}
+a_1=7,a_2=11,a_3=10\\
+m_1=5,m_2=3,m_3=13
+\end{array}
+\right\}
+\Rightarrow \begin{cases}
+b_i=m_2m_3 \\
+b_2=m_1m_3 \\
+b_3=m_1m_2
+\end{cases}
+$$
 
