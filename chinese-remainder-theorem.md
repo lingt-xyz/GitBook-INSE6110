@@ -50,22 +50,27 @@ $$\begin{align}x&=aqq'+bpp'\pmod{pq}\\ &=5\times7\times\big(7^{-1}\pmod{11}\big)
 ### Q2
 
 $$
-x=7 \pmod {5}\\
-x=11 \pmod 3\\
+x=5 \pmod {7}\\
+x=3 \pmod {11}\\
 x=10 \pmod {13}
 $$
 
 $$
-\left.
-\begin{array}{}
-a_1=7,a_2=11,a_3=10\\
-m_1=5,m_2=3,m_3=13
-\end{array}
-\right\}
+\begin{cases}
+a_1=5,a_2=3,a_3=10\\
+m_1=7,m_2=11,m_3=13
+\end{cases}\\
 \Rightarrow \begin{cases}
-b_i=m_2m_3 \\
-b_2=m_1m_3 \\
-b_3=m_1m_2
+b_1=m_2m_3=143 \\
+b_2=m_1m_3=91 \\
+b_3=m_1m_2=77
+\end{cases}
+\Rightarrow \begin{cases}
+b_1' = {b_1}^{-1}\pmod{m_1} ={143}^{-1}\pmod 7=5\\
+b_2' = {b_2}^{-1}\pmod{m_2} =91^{-1}\pmod {11} =4\\
+b_3' = {b_3}^{-1}\pmod{m_3} =77^{-1}\pmod {13} =12
 \end{cases}
 $$
+
+$$\begin{align}x&=n\sum_{i=1}^{n}{a_ib_ib_i'}\pmod{m_1m_2\cdots m_n}\\ &=5\times143\times5+3\times91\times4+10\times77\times12\pmod{7\times11\times13} \\ &=3575+1092+9240\pmod{1001}\\ &=894\end{align}$$
 
