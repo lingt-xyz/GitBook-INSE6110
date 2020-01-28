@@ -10,7 +10,7 @@
 * [Modular exponentiation](modular-exponentiation.md)
 * [Fermat's little Theorem](fermats-little-theorem.md)
 * [Euler's phi function](eulers-phi-function.md)
-* [Euler Theory](euler-theory.md)
+* [Chinese Remainder Theorem](chinese-remainder-theorem.md)
 * [Practice 1](practice-1.md)
 
 ## Classical Ciphers
