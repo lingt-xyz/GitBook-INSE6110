@@ -36,5 +36,5 @@ $$
 
 ## Examples
 
-$$12=3\times4\Rightarrow\Phi(12)=(3-1)(4-1)=8$$
+$$15=3\times5\Rightarrow\Phi(12)=(3-1)(5-1)=8$$
 
