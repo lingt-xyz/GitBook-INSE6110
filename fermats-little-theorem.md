@@ -2,7 +2,7 @@
 
 ## Definition
 
-If $$p$$ is a prime and $$a$$ is any integer not divisible by $$p$$, then $$a^{p − 1} − 1$$ is divisible by $$p$$. That is
+If $$p$$ is a prime and $$a$$ is any integer not divisible by $$p$$\(that is$$gcd(a,p)=1$$\), then $$a^{p − 1} − 1$$ is divisible by $$p$$. That is
 
 $$
 a^{p − 1}\equiv 1\pmod p

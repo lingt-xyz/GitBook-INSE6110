@@ -1,7 +1,3 @@
----
-description: Square and multiply
----
-
 # Modular exponentiation
 
 ## Definition
