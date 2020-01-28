@@ -2,6 +2,16 @@
 
 ## Q1
 
+Let $$A=\begin{bmatrix}     11 & 12 \\    71 & 33 \\  \end{bmatrix}$$, find $$A^{-1}$$over $$Z_5$$.
+
+## Q2
+
+### A\)
+
+### B\)
+
+### C\)
+
 ## Q6-1
 
 Let $$p=19$$ and $$q=29$$. Let $$N=p×q$$. Find $$d=5^{-1} \pmod {\Phi(N)}$$. Ans.$$d=101$$
