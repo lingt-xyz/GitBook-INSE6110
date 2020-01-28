@@ -12,8 +12,10 @@ $$
 has a unique solution for$$x\pmod {pq}$$, which is
 
 $$
-x=\Big(aq\big(q^{-1}\pmod{p}\big)+bp\big(p^{-1}\pmod {p}\big)\Big)\pmod{pq}
+x=aqq'+bpp'\pmod{pq}
 $$
+
+where $$q'=q^{-1}\pmod{p}$$and $$p'=p^{-1}\pmod{q}$$
 
 ### For several equations
 
