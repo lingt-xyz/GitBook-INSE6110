@@ -11,16 +11,10 @@ $$
 If $$p,q$$are prime numbers, and $$N=pq$$,
 
 $$
-a^{\Phi(N)}\equiv (p-1)(q-1)
+{\Phi(N)}\equiv (p-1)(q-1)
 $$
 
-If $$gcd(a,p)=1$$,
-
-$$
-a^{\Phi(p)}\equiv 1\pmod p
-$$
-
-## General form
+### General form
 
 The [fundamental theorem of arithmetic](https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic) states that if $$n > 1$$ there is a unique expression for $$n$$,
 
@@ -32,6 +26,20 @@ where $$p_1 < p_2 < \cdots < p_r$$ are [prime numbers](https://en.wikipedia.org/
 
 $$
 \Phi(n)=n\Big(1-\frac{1}{p_1}\Big)\Big(1-\frac{1}{p_2}\Big)\cdots \Big(1-\frac{1}{p_r}\Big)
+$$
+
+## Euler Theory
+
+If $$gcd(a,N)=1$$,
+
+$$
+a^{\Phi(N)}\equiv 1\pmod N
+$$
+
+Special case, $$p$$is prime,
+
+$$
+a^{\Phi(p)}\equiv 1\pmod p
 $$
 
 ## Examples
