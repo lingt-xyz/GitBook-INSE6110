@@ -24,16 +24,24 @@
 
 $$(m^{a_1b_1a_2}\pmod p)^{b_2}\pmod p\equiv m^{a_1b_1a_2b_2}\pmod p\equiv m$$
 
-## Algorithm
+### Cryptanalysis
+
+## Diffie-Hellman Key Exchange
+
+### Algorithm
 
 * $$p$$, a large prime integer, public
-* $$g$$, a primitive root mod p, public \(also called a generator\)
+* $$g$$, a primitive root mod $$p$$, public \(also called a generator\)
 * Session key is then obtained by both parties calculating:
   * a,ba,b are private to Alice and Bob respectively
   * Kab=gab\(modp\)Kab=gab\(modp\)
   * Alice can compute Kab=gba\(modp\)Kab=gba\(modp\)
   * Bob can compute Kab=gab\(modp\)Kab=gab\(modp\)
 * {Message,Password}k
+
+## Cryptanalysis
+
+
 
 
 
