@@ -31,10 +31,12 @@ $$
 where $$p_1 < p_2 < \cdots < p_r$$ are [prime numbers](https://en.wikipedia.org/wiki/Prime_number). We have
 
 $$
-\Phi(n)=n\Big(1-\frac{1}{n_1}\Big)\Big(1-\frac{1}{n_2}\Big)\cdots \Big(1-\frac{1}{n_r}\Big)
+\Phi(n)=n\Big(1-\frac{1}{p_1}\Big)\Big(1-\frac{1}{p_2}\Big)\cdots \Big(1-\frac{1}{p_r}\Big)
 $$
 
 ## Examples
 
 $$15=3\times5\Rightarrow\Phi(12)=(3-1)(5-1)=8$$
+
+$$\Phi(12)=\Phi(3^14^1)=12\Big(1-\frac{1}{3}\Big)\Big(1-\frac{1}{4}\Big)=12\cdot\frac{2}{3}\cdot\frac{3}{4}=6$$
 
