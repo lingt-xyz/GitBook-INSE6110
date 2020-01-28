@@ -15,7 +15,7 @@ $$
 x=aqq'+bpp'\pmod{pq}
 $$
 
-where $$q'=q^{-1}\pmod{p}$$and $$p'=p^{-1}\pmod{q}$$
+where $$q'=q^{-1}\pmod{p}$$and $$p'=p^{-1}\pmod{q}$$.
 
 ### For several equations
 

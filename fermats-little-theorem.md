@@ -1,6 +1,6 @@
 # Fermat's little Theorem
 
-## Definition
+## Statement
 
 If $$p$$ is a prime and $$a$$ is any integer not divisible by $$p$$\(that is$$gcd(a,p)=1$$\), then $$a^{p − 1} − 1$$ is divisible by $$p$$. That is
 
