@@ -8,7 +8,7 @@ $$
 \Phi(p)=p-1
 $$
 
-Therefore,
+Therefore, if $$gcd(a,p)=1$$,
 
 $$
 a^{\Phi(p)}\equiv 1\pmod p
