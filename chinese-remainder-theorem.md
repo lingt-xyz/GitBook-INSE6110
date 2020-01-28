@@ -9,7 +9,11 @@ x=a \pmod p\\
 x=b \pmod q
 $$
 
-has a unique solution for$$x\pmod {pq}$$.
+has a unique solution for$$x\pmod {pq}$$, which is
+
+$$
+x=\Big(aq\big(q^{-1}\pmod{p}\big)+bp\big(p^{-1}\pmod {p}\big)\Big)\pmod{pq}
+$$
 
 ### For several equations
 
