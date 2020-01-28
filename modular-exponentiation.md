@@ -1,10 +1,6 @@
----
-description: Square and multiply
----
-
 # Modular exponentiation
 
-## Statement
+## Definition
 
 Given $$c=a\cdot b$$,
 
