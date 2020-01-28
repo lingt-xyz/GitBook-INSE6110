@@ -20,5 +20,21 @@ $$
 a^{\Phi(p)}\equiv 1\pmod p
 $$
 
+## General form
 
+The [fundamental theorem of arithmetic](https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic) states that if $$n > 1$$ there is a unique expression for $$n$$,
+
+$$
+n=p_1^{k_1}p_2^{k2}\cdots p_r^{k_r},
+$$
+
+where $$p_1 < p_2 < \cdots < p_r$$ are [prime numbers](https://en.wikipedia.org/wiki/Prime_number). We have
+
+$$
+\Phi(n)=n\Big(1-\frac{1}{n_1}\Big)\Big(1-\frac{1}{n_2}\Big)\cdots \Big(1-\frac{1}{n_r}\Big)
+$$
+
+## Examples
+
+$$12=3\times4\Rightarrow\Phi(12)=(3-1)(4-1)=8$$
 
