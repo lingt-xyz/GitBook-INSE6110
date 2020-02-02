@@ -4,6 +4,16 @@
 
 Let $$A=\begin{bmatrix}     11 & 12 \\    71 & 33 \\  \end{bmatrix}$$, find $$A^{-1}$$over $$Z_5$$.
 
+$$A\bmod 5\equiv\begin{bmatrix} 11 & 12 \\ 71 & 33 \\ \end{bmatrix} \bmod 5 \equiv\begin{bmatrix} 1 & 2 \\ 1 & 3 \\ \end{bmatrix} \bmod 5$$
+
+By the formula
+
+$$
+\begin{bmatrix} a & b \\ c & d \\ \end{bmatrix}^{-1}=\frac{1}{ad-bc}\begin{bmatrix} d & -b \\ -c & a \\ \end{bmatrix}
+$$
+
+$$A^{-1}\bmod 5\equiv\begin{bmatrix} 1 & 2 \\ 1 & 3 \\ \end{bmatrix} ^{-1}\bmod 5\equiv\frac{1}{3-2}\begin{bmatrix} 3 & -2 \\ -1 & 1 \\ \end{bmatrix}\bmod 5\equiv\begin{bmatrix} 3 & 3 \\ 4 & 1 \\ \end{bmatrix}\bmod 5$$
+
 ## Q2
 
 ### A1\) 
