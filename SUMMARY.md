@@ -7,6 +7,7 @@
 ## Number Theory
 
 * [Modular multiplicative inverse](modular-multiplicative-inverse.md)
+* [Euclid's algorithm](euclids-algorithm.md)
 * [Modular exponentiation](modular-exponentiation.md)
 * [Fermat's little Theorem](fermats-little-theorem.md)
 * [Euler's phi function](eulers-phi-function.md)
