@@ -1,15 +1,11 @@
----
-description: Square and multiply
----
-
 # Modular exponentiation
 
-## Statement
+## Definition
 
 Given $$c=a\cdot b$$,
 
 $$
-c\bmod m=(a\times b)\bmod m=\big[(a\bmod m)\cdot(b\bmod m)\big]\bmod m
+c\pmod m=(a\times b)\pmod m=\Big[\big(a\pmod m)\cdot(b\pmod m\big)\Big]\pmod m
 $$
 
 ## Examples
