@@ -223,9 +223,7 @@ Let $$p=19$$ and $$q=29$$. Let $$N=p×q$$. Find $$d=5^{-1} \pmod {\Phi(N)}$$. An
 
 ## Q6-2
 
-$${11}^5\pmod {551}$$
-
-$${11}^5\pmod {551}\equiv {11}^4\pmod {551}\times {11}^1\pmod {551}$$
+$${11}^5\bmod {551}\equiv( {11}^4\bmod {551}\times {11}^1\bmod {551})\bmod {551}$$
 
 ## Q6-3
 
