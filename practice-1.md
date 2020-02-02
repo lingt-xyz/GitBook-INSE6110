@@ -177,11 +177,41 @@ $$\Rightarrow3^{26460}\bmod26797\equiv1$$
 
 ### A\)
 
+$$
+\begin{align}
+x&=3\bmod7\\
+x&=5\bmod11\\
+x&=9\bmod13
+\end{align}
+$$
+
 ### B\)
+
+$$
+\begin{align}
+x&=2\bmod7\\
+x&=3\bmod11
+\end{align}
+$$
 
 ### C\)
 
+$$
+\begin{align}
+x&=11\bmod19\\
+x&=12\bmod23
+\end{align}
+$$
+
 ### D\)
+
+$$
+\begin{align}
+x&=1\bmod19\\
+x&=2\bmod23\\
+x&=3\bmod17
+\end{align}
+$$
 
 ## Q6-1
 
