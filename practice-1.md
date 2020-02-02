@@ -225,11 +225,13 @@ $$\begin{align}x&=\sum_{i=1}^{n}{a_ib_ib_i'}\pmod{m_1m_2\cdots m_n}\\ &=\Big(1\t
 
 ## Q6-1
 
-Let $$p=19$$ and $$q=29$$. Let $$N=p×q$$. Find $$d=5^{-1} \pmod {\Phi(N)}$$. Ans.$$d=101$$
+Let $$p=19$$ and $$q=29$$. Let $$N=p×q$$. Find $$5^{-1} \bmod {\Phi(N)}$$.
+
+$$\begin{align}&5^{-1} \bmod {\Phi(N)}\\&=5^{-1} \bmod(p-1)(q-1)\\&=5^{-1} \bmod18\times28\\&=5^{-1} \bmod504\\&=101\end{align}$$
 
 ## Q6-2
 
-$${11}^5\bmod {551}\equiv( {11}^4\bmod {551}\times {11}^1\bmod {551})\bmod {551}$$
+$$\begin{align}{11}^5\bmod {551}&\equiv( {11}^4\bmod {551}\times {11}^1\bmod {551})\bmod {551}\\ &\equiv(315\times 11)\bmod {551}\\&\equiv159\end{align}$$
 
 ## Q6-3
 
