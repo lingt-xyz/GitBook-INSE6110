@@ -129,6 +129,60 @@ $$\begin{align} &{123}^{4}\bmod129\equiv6\\\Rightarrow&{123}^{8}\bmod129\equiv36
 
 $${123}^{20}\bmod129\equiv6\times6\bmod129=36$$
 
+## Q3
+
+Factor $$N=26797$$using the fact that $$\Phi(N)=26460$$.
+
+$$\begin{cases}  N=26797=pq\\  \Phi(N)=26460=(p-1)(q-1)\end{cases}\Rightarrow\begin{cases}  p=\frac{26797}{q}\\  (\frac{26797}{q}-1)(q-1)=26460\end{cases}$$
+
+$$\begin{align} &(\frac{26797}{q}-1)(q-1)=26460\\ \Rightarrow  &(26797-q)(q-1)=26460q \\ \Rightarrow  &26797q-q^2-26797+q=26460q \\ \Rightarrow  &q^2-338q+26797=0 \end{align}$$
+
+$$
+\begin{align}
+&q=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\Rightarrow&q=\frac{338\pm\sqrt{(-338)^2-4\times1\times26797}}{2\times1}\\
+\Rightarrow&q=\frac{338\pm84}{2}\\
+\Rightarrow&q=127,211\\
+\end{align}
+$$
+
+## Q4
+
+### A\)
+
+Let $$p=123456791$$. Find $${123}^{123456790}\bmod123456791$$.
+
+According to Fermat's little Theorem:
+
+$$
+a^{p − 1}\equiv 1\pmod p\Rightarrow {123}^{123456790}\bmod123456791\equiv1
+$$
+
+### B\)
+
+From the information provided in Q3, find $$3^{26460}\bmod26797$$.
+
+According to Euler's Theorem:
+
+$$
+\begin{align}
+&a^{\Phi(N)}\equiv 1\pmod N\\
+\text{and}&\\&{\Phi(N)}\equiv (p-1)(q-1)\text{ for }N=pq
+\end{align}
+$$
+
+$$\Rightarrow3^{26460}\bmod26797\equiv1$$
+
+## Q5
+
+### A\)
+
+### B\)
+
+### C\)
+
+### D\)
+
 ## Q6-1
 
 Let $$p=19$$ and $$q=29$$. Let $$N=p×q$$. Find $$d=5^{-1} \pmod {\Phi(N)}$$. Ans.$$d=101$$
