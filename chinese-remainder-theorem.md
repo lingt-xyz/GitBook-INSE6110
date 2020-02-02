@@ -31,7 +31,7 @@ $$
 has a unique solution for $$x\pmod {m_1m_2\cdots m_n}$$, which is
 
 $$
-x=n\sum_{i=1}^{n}{a_ib_ib_i'}\pmod{m_1m_2\cdots m_n}
+x=\sum_{i=1}^{n}{a_ib_ib_i'}\pmod{m_1m_2\cdots m_n}
 $$
 
  where $$b_i = \frac{m_1m_2\cdots m_n}{m_i}$$ and $$b_i' = {b_i}^{-1}\pmod{m_i}$$.
@@ -72,5 +72,5 @@ b_3' = {b_3}^{-1}\pmod{m_3} =77^{-1}\pmod {13} =12
 \end{cases}
 $$
 
-$$\begin{align}x&=n\sum_{i=1}^{n}{a_ib_ib_i'}\pmod{m_1m_2\cdots m_n}\\ &=5\times143\times5+3\times91\times4+10\times77\times12\pmod{7\times11\times13} \\ &=3575+1092+9240\pmod{1001}\\ &=894\end{align}$$
+$$\begin{align}x&=\sum_{i=1}^{n}{a_ib_ib_i'}\pmod{m_1m_2\cdots m_n}\\ &=5\times143\times5+3\times91\times4+10\times77\times12\pmod{7\times11\times13} \\ &=3575+1092+9240\pmod{1001}\\ &=894\end{align}$$
 
