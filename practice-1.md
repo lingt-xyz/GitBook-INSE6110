@@ -187,7 +187,7 @@ $$
 
 $$a_1=3,a_2=5,a_3=9,m_1=7,m_2=11,m_3=13$$
 
-$$\begin{align}x&=\sum_{i=1}^{n}{a_ib_ib_i'}\pmod{m_1m_2\cdots m_n}\\ &=\Big(3\times(11\times13)\times\big((11\times13)^{-1}\bmod7\big)\\ &\  +5\times(7\times13)\times\big((7\times13)^{-1}\bmod11\big)\\ &\ +9\times(7\times11)\times\big((7\times11)^{-1}\bmod13\big)\Big)\bmod(7\times11\times13)\\ &=  \end{align}$$
+$$\begin{align}x&=\sum_{i=1}^{n}{a_ib_ib_i'}\pmod{m_1m_2\cdots m_n}\\ &=\Big(3\times(11\times13)\times\big((11\times13)^{-1}\bmod7\big)\\ &\  +5\times(7\times13)\times\big((7\times13)^{-1}\bmod11\big)\\ &\ +9\times(7\times11)\times\big((7\times11)^{-1}\bmod13\big)\Big)\bmod(7\times11\times13)\\ &= (3\times143\times5+5\times91\times4+9\times77\times12)\bmod1001\\ &=269 \end{align}$$
 
 ### B\)
 
@@ -198,6 +198,8 @@ x&=3\bmod11
 \end{align}
 $$
 
+$$\begin{align}x&=\sum_{i=1}^{n}{a_ib_ib_i'}\pmod{m_1m_2\cdots m_n}\\ &=\big(2\times11\times({11}^{-1}\bmod7)\\ &\  +3\times7\times(7^{-1}\bmod11)\bmod(7\times11)\big)\\ &= (2\times11\times2+3\times7\times8)\bmod77\\ &=58 \end{align}$$
+
 ### C\)
 
 $$
@@ -206,6 +208,8 @@ x&=11\bmod19\\
 x&=12\bmod23
 \end{align}
 $$
+
+$$\begin{align}x&=\sum_{i=1}^{n}{a_ib_ib_i'}\pmod{m_1m_2\cdots m_n}\\ &=\big(11\times23\times({23}^{-1}\bmod19)\\ &\  +12\times19\times(19^{-1}\bmod23)\bmod(19\times23)\big)\\ &= (11\times23\times5+12\times19\times17)\bmod(19\times23)\\ &=334 \end{align}$$
 
 ### D\)
 
@@ -216,6 +220,8 @@ x&=2\bmod23\\
 x&=3\bmod17
 \end{align}
 $$
+
+$$\begin{align}x&=\sum_{i=1}^{n}{a_ib_ib_i'}\pmod{m_1m_2\cdots m_n}\\ &=\Big(3\times(11\times13)\times\big((11\times13)^{-1}\bmod7\big)\\ &\  +5\times(7\times13)\times\big((7\times13)^{-1}\bmod11\big)\\ &\ +9\times(7\times11)\times\big((7\times11)^{-1}\bmod13\big)\Big)\bmod(7\times11\times13)\\ &= (3\times143\times5+5\times91\times4+9\times77\times12)\bmod1001\\ &=269 \end{align}$$
 
 ## Q6-1
 
