@@ -121,6 +121,14 @@ $${114}^{-1}\bmod 115\equiv -1\bmod115=114$$
 
 ### C\)
 
+Using the square and multiply algorithm to evaluate $${123}^{20}\bmod129$$.
+
+$${123}^{20}={123}^{16}\times{123}^{4}$$
+
+$$\begin{align} &{123}^{4}\bmod129\equiv6\\\Rightarrow&{123}^{8}\bmod129\equiv36\bmod129=36\\\Rightarrow&{123}^{16}\bmod129\equiv {36}^2\bmod129=6\end{align}$$
+
+$${123}^{20}\bmod129\equiv6\times6\bmod129=36$$
+
 ## Q6-1
 
 Let $$p=19$$ and $$q=29$$. Let $$N=p×q$$. Find $$d=5^{-1} \pmod {\Phi(N)}$$. Ans.$$d=101$$
