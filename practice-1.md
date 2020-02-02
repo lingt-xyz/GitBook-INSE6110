@@ -221,7 +221,7 @@ x&=3\bmod17
 \end{align}
 $$
 
-$$\begin{align}x&=\sum_{i=1}^{n}{a_ib_ib_i'}\pmod{m_1m_2\cdots m_n}\\ &=\Big(3\times(11\times13)\times\big((11\times13)^{-1}\bmod7\big)\\ &\  +5\times(7\times13)\times\big((7\times13)^{-1}\bmod11\big)\\ &\ +9\times(7\times11)\times\big((7\times11)^{-1}\bmod13\big)\Big)\bmod(7\times11\times13)\\ &= (3\times143\times5+5\times91\times4+9\times77\times12)\bmod1001\\ &=269 \end{align}$$
+$$\begin{align}x&=\sum_{i=1}^{n}{a_ib_ib_i'}\pmod{m_1m_2\cdots m_n}\\ &=\Big(1\times(23\times17)\times\big((23\times17)^{-1}\bmod19\big)\\ &\  +2\times(19\times17)\times\big((19\times17)^{-1}\bmod23\big)\\ &\ +3\times(19\times23)\times\big((19\times23)^{-1}\bmod17\big)\Big)\bmod(19\times23\times17)\\ &= (1\times391\times7+2\times323\times1+3\times437\times10)\bmod7429\\ &=1635 \end{align}$$
 
 ## Q6-1
 
