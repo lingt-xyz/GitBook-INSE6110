@@ -19,7 +19,7 @@ The algorithm starts by making an initial guess about what the key is. This gues
 
 The resulting text will have a certain similarity to the expected language of the plaintext depending on how many correct symbols there were in the guess in the first place.
 
-In the iterated loop which follows we rst alter the current key a little bit, then this key is used to decrypt the ciphertext once again and nally we check if the contents of the new resulting text are closer to the expected language than those of the previously decrypted text. If they are, we keep the new key for the next iteration, if not the old one is used but modi ed in another way next time the loop is run through etc.
+In the iterated loop which follows we first alter the current key a little bit, then this key is used to decrypt the ciphertext once again and finally we check if the contents of the new resulting text are closer to the expected language than those of the previously decrypted text. If they are, we keep the new key for the next iteration, if not the old one is used but modified in another way next time the loop is run through etc.
 
 a function which reflects "how close" the contents of a given text are to the expected language.
 
