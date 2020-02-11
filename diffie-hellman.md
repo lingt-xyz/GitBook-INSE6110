@@ -28,7 +28,7 @@ $$(m^{a_1b_1a_2}\pmod p)^{b_2}\pmod p\equiv m^{a_1b_1a_2b_2}\pmod p\equiv m$$
 
 ### Cryptanalysis
 
-## Diffie-Hellman Key Exchange
+## Key Exchange
 
 ### Algorithm
 
