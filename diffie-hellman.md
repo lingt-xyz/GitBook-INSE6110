@@ -1,6 +1,6 @@
 # Diffie-Hellman
 
-## Three passes
+## 3-pass
 
 ### Algorithm
 
@@ -10,8 +10,6 @@
 * $$b_1,b_2$$: Bob's private keys
   * $$b_2\equiv {b_1}^{-1}\pmod {p-1}$$
 * $$m$$: message to be passed from Alice to Bob
-
-### Encryption: Three passes
 
 ![](.gitbook/assets/3-pass.PNG)
 
@@ -32,7 +30,7 @@ $$(m^{a_1b_1a_2}\pmod p)^{b_2}\pmod p\equiv m^{a_1b_1a_2b_2}\pmod p\equiv m$$
 
 ### Algorithm
 
-* $$p$$, a large prime integer, _**public**_
+* $$p$$, a _**large**_ prime integer, _**public**_
 * $$g$$, a primitive root mod $$p$$, public \(also called a generator\)
 * Session key is then obtained by both parties calculating:
   * $$a,b$$ are private to Alice and Bob respectively
@@ -40,7 +38,15 @@ $$(m^{a_1b_1a_2}\pmod p)^{b_2}\pmod p\equiv m^{a_1b_1a_2b_2}\pmod p\equiv m$$
   * Alice can compute $$K_{ab}=g^{ba}\pmod p$$
   * Bob can compute $$K_{ab}=g^{ab}\pmod p$$
 
+![](.gitbook/assets/key-exchange.png)
+
 ### Cryptanalysis
+
+Man in the middle
+
+![](.gitbook/assets/key-exchange-mitm.png)
+
+
 
 
 
