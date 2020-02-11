@@ -32,7 +32,7 @@ $$(m^{a_1b_1a_2}\pmod p)^{b_2}\pmod p\equiv m^{a_1b_1a_2b_2}\pmod p\equiv m$$
 
 ### Algorithm
 
-* $$p$$, a large prime integer, public
+* $$p$$, a large prime integer, _**public**_
 * $$g$$, a primitive root mod $$p$$, public \(also called a generator\)
 * Session key is then obtained by both parties calculating:
   * $$a,b$$ are private to Alice and Bob respectively
@@ -40,7 +40,7 @@ $$(m^{a_1b_1a_2}\pmod p)^{b_2}\pmod p\equiv m^{a_1b_1a_2b_2}\pmod p\equiv m$$
   * Alice can compute $$K_{ab}=g^{ba}\pmod p$$
   * Bob can compute $$K_{ab}=g^{ab}\pmod p$$
 
-## Cryptanalysis
+### Cryptanalysis
 
 
 
