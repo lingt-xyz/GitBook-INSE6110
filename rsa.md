@@ -1,7 +1,5 @@
 # RSA
 
-
-
 Invented in 1978 by Ron **R**ivest, Adi **S**hamir and Leonard **A**dleman.
 
 Based on intractability of the integer factor factorization problem.
