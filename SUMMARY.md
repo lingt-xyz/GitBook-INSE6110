@@ -5,6 +5,7 @@
 * [Symmetric Key](symmetric-key.md)
 * [Project](project-1.md)
 * [Practice 1](practice-1.md)
+* [Practice 2](practice-2.md)
 
 ## Number Theory
 
