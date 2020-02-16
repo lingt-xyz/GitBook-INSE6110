@@ -11,7 +11,7 @@
   * $$b_2\equiv {b_1}^{-1}\pmod {p-1}$$
 * $$m$$: message to be passed from Alice to Bob
 
-![](.gitbook/assets/3-pass.PNG)
+![Alice passing message to Bob](.gitbook/assets/3-pass.PNG)
 
 * Pass 1: Alice to Bob
   * $$m^{a_1}\pmod p$$
@@ -38,7 +38,7 @@ $$(m^{a_1b_1a_2}\pmod p)^{b_2}\pmod p\equiv m^{a_1b_1a_2b_2}\pmod p\equiv m$$
   * Alice can compute $$K_{ab}=g^{ba}\pmod p$$
   * Bob can compute $$K_{ab}=g^{ab}\pmod p$$
 
-![](.gitbook/assets/key-exchange.png)
+![Alice and Bob sharing the key](.gitbook/assets/key-exchange.png)
 
 ### Cryptanalysis
 
