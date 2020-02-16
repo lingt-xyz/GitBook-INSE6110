@@ -2,18 +2,15 @@
 
 Invented in 1978 by Ron **R**ivest, Adi **S**hamir and Leonard **A**dleman.
 
+Based on intractability of the integer factor factorization problem.
+
 ## Algorithm
 
-* Based on intractability of the integer factor factorization problem
 * $$p,q$$: a large prime integer, _**private**_
-* $$N=pq$$, $$N$$is _**public**_
-* _\*\*\*\*_$$\Phi(N)=(p-1)(q-1)$$, $$\Phi(N)$$is _**public**_
-* Select a random integer $$e: 1< e < \Phi(N) $$
-  * gcd$$(e,\Phi(N))=1$$
-* Use extended Euclidean algorithm to computer the unique integer $$d,1< d <\Phi(N)$$, such that $$ed\equiv1\mod{\Phi(N)}$$.
-* Keys
-  * Public key is $$(e,N)$$.
-  * Private key is $$d$$.
+* $$N$$: compute$$N=pq$$, _**public**_
+* _\*\*\*\*_$$\Phi(N)$$: compute $$\Phi(N)=(p-1)(q-1)$$, _**private**_
+* $$e$$: choose a random integer $$e: 1< e < \Phi(N) $$, such that gcd$$(e,\Phi(N))=1$$, _**public**_
+* $$d$$: determine the unique integer $$d:1< d <\Phi(N)$$, such that $$ed\equiv1\mod{\Phi(N)}$$, _**private**_
 
 ## Encryption
 
