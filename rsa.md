@@ -2,6 +2,10 @@
 
 Invented in 1978 by Ron **R**ivest, Adi **S**hamir and Leonard **A**dleman.
 
+Invented in 1978 by Ron **R**ivest, Adi **S**hamir and Leonard **A**dleman.
+
+## Algorithm
+
 Based on intractability of the integer factor factorization problem.
 
 ## Algorithm
