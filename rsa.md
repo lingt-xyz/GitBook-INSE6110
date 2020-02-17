@@ -103,43 +103,27 @@ Three possible approaches, all of them are equivalent to factoring $$n$$:
 
 ## Examples
 
-### Low exponent
+### Protocol failure
 
-### Common module
+#### 1. Low exponent
 
-$$c_1 = m^{e_1} \mod n, c_2 = m^{e_2} \mod n$$
+#### 2. Common module
 
-$$(e_1)a + (e_2) b = 1$$ if $$gcd(e_1,e_2)=1$$
+### Factoring
 
-$$m = c_1^a c_2^b \mod n$$
-
-### Twin prime
+#### 1. Twin prime
 
 $$(p, p\pm2)$$
 
-### Common $$p$$
+#### 2. Common $$p$$
 
 $$N_1=pq_1, N_2=pq_2\Rightarrow gcd(N_1,N_2)=p$$
 
-###  ?$$x^2,y^2$$
+#### 3. $$x^2,y^2$$
 
 $$x\neq y\mod N$$, but $$x^2=y^2\mod N$$, then $$\Rightarrow gcd(N,x\pm y)=p$$
 
-e.g.: $$x=68,y=2,N=77$$
+e.g.: 
 
-$$68\mod77\neq 2\mod 77$$, but $$68^2\mod 77\equiv 2^2\mod 77$$
-
-$$gcd(N,x\pm y)\Rightarrow gcd(77,70)=7, gcd(77,66)=11$$
-
-### Factoring when knowing $$e$$ and $$d$$
-
-### Multiplicative property
-
-$$c_1 c_2 = m_1^e m_2^e \mod n = (m_1m_2 )^e \mod N$$
-
-Attacker chooses $$x$$ and computes $$c' = c x^e \mod N$$.
-
-Asks Alice to decrypt it so, $${c'}^d = c^d x \mod N = mx \mod N$$
-
-
+#### Factoring when knowing $$e$$ and $$d$$
 
