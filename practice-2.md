@@ -59,7 +59,9 @@ Check $$gcd(e_1,e_2)=1$$
 
 $$5\times7-2\times17=1\Rightarrow a_1=5,a_2=-2$$
 
-$$m=c_1^{a_1}\times c_2^{a_2}\mod N$$
+$$\begin{align}m&=c_1^{a_1}\times c_2^{a_2}\mod N\\&=42^5\times 9^{-2}\mod 143\\&=100\times 81^{-1}\mod 143\\&=100\times 113\mod 143\\&=3\end{align}$$
+
+Check $$c^7\mod 143=42, 3^{17}\mod 143=9$$
 
 ## Q6
 
