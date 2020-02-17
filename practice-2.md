@@ -42,9 +42,24 @@ Encrypt $$m=c^e\mod N=$$
 
 Consider an RSA system in which the attacker knows that $$n_1$$ and $$n_2$$ has the form $$n_1=pq_1=16637 $$and $$n_2=pq_2=17399$$. Show how the attacker can break this system.
 
+$$gcd(n_1,n_2)=127\Rightarrow p=127,q_1=131,q_2=137$$
+
 ## Q5
 
-Consider an RSA system with $$n=143, e_1=7$$ and $$e_2=17$$. Suppose the same message $$m$$ was sent to the two users above and the attacker observed the ciphertext $$c_1=42$$ and $$c_2=9$$. Show how the attacker can recover the message.
+Consider an RSA system with $$N=143, e_1=7$$ and $$e_2=17$$. Suppose the same message $$m$$ was sent to the two users above and the attacker observed the ciphertext $$c_1=42$$ and $$c_2=9$$. Show how the attacker can recover the message.
+
+Check $$gcd(e_1,e_2)=1$$
+
+| $$R_i$$ | $$D_i$$ | $$S_i$$ |
+| :--- | :--- | :--- |
+| 17 |  | 0 |
+| 7 | 2 | 1 |
+| 3 | 2 | $$0-1\times2=-2$$ |
+| 1 |  | $$1-(-2)\times2=5$$ |
+
+$$5\times7-2\times17=1\Rightarrow a_1=5,a_2=-2$$
+
+$$m=c_1^{a_1}\times c_2^{a_2}\mod N$$
 
 ## Q6
 
@@ -52,5 +67,5 @@ Consider an RSA that is using twin primes. If $$n=10403$$ and $$e=8743$$. Show h
 
 ## Q7
 
-Consider an RSA system where the public key of three users \(i.e., $$(n,e)$$ are given by: $$(319,3), (697,3)$$ and $$(1081,3)$$. If the same message was sent to the three users. Show how the attacker can recover m by observing the ciphertexts $$c_1=128, c_2=34$$ and $$c_3=589$$.
+Consider an RSA system where the public key of three users \(i.e., $$(n,e)$$ are given by: $$(319,3), (697,3)$$ and $$(1081,3)$$. If the same message was sent to the three users. Show how the attacker can recover $$m$$ by observing the ciphertexts $$c_1=128, c_2=34$$ and $$c_3=589$$.
 
