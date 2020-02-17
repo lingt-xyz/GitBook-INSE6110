@@ -87,13 +87,11 @@ By measuring the time required to perform decryption \(exponentiation with the p
 
 ### Mathematical attacks
 
-Three possible approaches:
+Three possible approaches, all of them are equivalent to factoring $$n$$:
 
 * Factor $$n = pq$$
 * Determine $$\Phi(n)$$
 * Find the private key $$d$$ directly
-
-All of them are equivalent to factoring $$n$$
 
 #### Factoring when knowing $$e$$ and $$d$$
 
