@@ -81,7 +81,13 @@ Check $$c^7\mod 143=42, 3^{17}\mod 143=9$$
 
 Consider an RSA that is using twin primes. If $$n=10403$$ and $$e=8743$$. Show how the adversary can recover the message corresponding to $$c=99$$.
 
+$$p(p+2)=10403\Rightarrow p=101, q=103\Rightarrow\Phi(N)=10200\Rightarrow d=e^{-1}\mod \Phi(N)=7$$
+
+$$c^d\mod N=99^{7}\mod (101\times103)=9366$$
+
 ## Q7
 
 Consider an RSA system where the public key of three users \(i.e., $$(n,e)$$ are given by: $$(319,3), (697,3)$$ and $$(1081,3)$$. If the same message was sent to the three users. Show how the attacker can recover $$m$$ by observing the ciphertexts $$c_1=128, c_2=34$$ and $$c_3=589$$.
+
+
 
