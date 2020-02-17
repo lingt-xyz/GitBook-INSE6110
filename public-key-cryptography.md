@@ -3,7 +3,7 @@
 ## What it is
 
 * **Each party** has a pair $$(P, S)$$ of keys: $$P$$ is the public key and $$S$$ is the secret key. 
-* Knowing the public-key and the cipher, it is still computationally infeasible to compute the private key \(an NP-class problem\). 
+* Knowing the public-key and the cipher, it is still computationally infeasible to compute the private key \(an NP-class problem\).
 * The public-key may be distributed to anyone wishing to communicate securely with its owner.
 
 ## Trapdoor One-way Functions
