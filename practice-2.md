@@ -4,9 +4,27 @@
 
 Suppose that users Alice and Bob carry out the Diffie-Hellman key agreement protocol with $$p = 101$$ and $$g = 17$$. Suppose that Alice chooses $$x = 19$$ and Bob chooses $$y = 13$$. Show the computations performed by both Alice and Bob, and determine the key that they will share.
 
+$$17^{1}\mod 101 =17$$
+
+$$17^{2}\mod 101 =87$$
+
+$$17^{4}\mod 101 =95$$
+
+$$17^{8}\mod 101 =36$$
+
+$$17^{16}\mod 101 =84$$
+
 Alice to Bob: $$g^{x_a}\mod p\equiv 17^{19}\mod 101=(84\times 87\times 17)\mod 101=6$$
 
 Bob to Alice: $$g^{x_b}\mod p\equiv 17^{13}\mod 101=(36\times 95\times17)\mod 101=65$$
+
+$$6^{1}\mod 101 =6$$
+
+$$6^{2}\mod 101 =36$$
+
+$$6^{4}\mod 101 =84$$
+
+$$6^{8}\mod 101 =87$$
 
 Shared key: $$K_{x_{ab}}=g^{x_ax_b}\mod p\equiv 6^{13}\mod 101\equiv 65^{19}\mod 101=14$$
 
