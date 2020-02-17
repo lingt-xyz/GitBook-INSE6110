@@ -135,3 +135,11 @@ $$gcd(N,x\pm y)\Rightarrow gcd(77,70)=7, gcd(77,66)=11$$
 
 ### Multiplicative property
 
+$$c_1 c_2 = m_1^e m_2^e \mod n = (m_1m_2 )^e \mod N$$
+
+Attacker chooses $$x$$ and computes $$c' = c x^e \mod N$$.
+
+Asks Alice to decrypt it so, $${c'}^d = c^d x \mod N = mx \mod N$$
+
+
+
