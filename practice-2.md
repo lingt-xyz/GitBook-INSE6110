@@ -48,6 +48,10 @@ Compute $$d=e^{-1}\mod\Phi(N)={13}^{-1}\mod 60=-23\mod 60=37$$
 
 Decrypt $$m=c^d\mod N=17^{37}\mod 77$$
 
+Speed up decryption by CRT.
+
+$$\begin{align}m_p&=17^{37}\mod 7\equiv 17^1\mod 7\equiv 3^1\mod 7=3\\m_q&=17^{37}\mod 11\equiv 17^7\mod 11\equiv 6^7\mod 11=8\end{align}$$
+
 ## Q4
 
 Consider an RSA system in which the attacker knows that $$n_1$$ and $$n_2$$ has the form $$n_1=pq_1=16637 $$and $$n_2=pq_2=17399$$. Show how the attacker can break this system.

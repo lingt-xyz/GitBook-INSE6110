@@ -35,6 +35,10 @@ That's why in RSA only $$N,e,d$$are kept.
 
 ![Alice sending message to Bob](.gitbook/assets/rsa.png)
 
+{% hint style="info" %}
+Compared with Diffie-Hellman, RSA has only one pass and less computation.
+{% endhint %}
+
 ## Examples
 
 ### Q1
@@ -47,11 +51,15 @@ Let $$m=15\Rightarrow C\equiv 15^{37}\mod 77=71$$
 
 Then $$c^d=71^{13}\mod 77=15$$
 
-## Speed up the encryption
+## Speed up encryption
 
 Square and multiply exponentiation
 
 The smaller the number of 1 bits, the better. Example: $$e= 2^{16} + 1 = 65537$$
+
+## Speed up decryption
+
+See practice 2 problem 3
 
 ## Parameter selections
 
