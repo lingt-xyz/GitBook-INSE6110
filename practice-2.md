@@ -34,9 +34,19 @@ Compute $$N=pq=7\times11=77$$
 
 Compute $$\Phi(N)=(p-1)(q-1)=6\times10=60$$
 
-Compute $$d=e^{-1}\mod\Phi(N)={13}^{-1}\mod 60=37$$
+Compute $$d=e^{-1}\mod\Phi(N)={13}^{-1}\mod 60=-23\mod 60=37$$
 
-Encrypt $$m=c^e\mod N=$$
+| $$R_i$$ | $$D_i$$ | $$S_i$$ |
+| :--- | :--- | :--- |
+| 60 |  | 0 |
+| 13 | 4 | 1 |
+| 8 | 1 | $$0-1\times4=-4$$ |
+| 5 | 1 | $$1-(-4\times1)=5$$ |
+| 3 | 1 | $$-4-5\times1=-9$$ |
+| 2 | 1 | $$5-(-9\times1)=14$$ |
+| 1 |  | $$-9-14\times1=-23$$ |
+
+Decrypt $$m=c^d\mod N=17^{37}\mod 77$$
 
 ## Q4
 
