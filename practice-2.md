@@ -18,13 +18,13 @@ Alice computes $$a_2={a_1}^{-1}\mod (p-1)=79$$
 
 Bob computes $$b_2={b_1}^{-1}\mod (p-1)=77$$
 
-Alice to Bob $$c_1 = m^{a_1}\mod p=$$
+Alice to Bob $$c_1 = m^{a_1}\mod p=37$$
 
-Bob to Alice $$c_2={c_1}^{b_1}\mod p = m^{a_1b_1}\mod p=$$
+Bob to Alice $$c_2={c_1}^{b_1}\mod p = m^{a_1b_1}\mod p=80$$
 
-Alice to Bob $$c_3={c_2}^{a_2}\mod p = m^{a_1b_1a_2}\mod p=$$
+Alice to Bob $$c_3={c_2}^{a_2}\mod p = m^{a_1b_1a_2}\mod p=56$$
 
-Bob decrypts $$m={c_4}^{b^2}\mod p=m^{a_1b_1a_2b_2}\mod p=m\mod p=m$$
+Bob decrypts $$m={c_4}^{b^2}\mod p=m^{a_1b_1a_2b_2}\mod p=m\mod p=m=5$$
 
 ## Q3
 
@@ -52,15 +52,23 @@ Speed up decryption by CRT.
 
 $$\begin{align}m_p&=17^{37}\mod 7\equiv 17^1\mod 7\equiv 3^1\mod 7=3\\m_q&=17^{37}\mod 11\equiv 17^7\mod 11\equiv 6^7\mod 11=8\end{align}$$
 
+$$x\equiv 3\mod7, x\equiv 8\mod11$$
+
+$$3\times 11\times (11^{-1}\mod 7)+8\times7\times(7^{-1}\mod 11)=52$$
+
 ## Q4
 
 Consider an RSA system in which the attacker knows that $$n_1$$ and $$n_2$$ has the form $$n_1=pq_1=16637 $$and $$n_2=pq_2=17399$$. Show how the attacker can break this system.
 
 $$gcd(n_1,n_2)=127\Rightarrow p=127,q_1=131,q_2=137$$
 
+$$e$$is public, $$n_1,n_2$$are known, then $$d_1,d_2$$ can be computed.
+
 ## Q5
 
 Consider an RSA system with $$N=143, e_1=7$$ and $$e_2=17$$. Suppose the same message $$m$$ was sent to the two users above and the attacker observed the ciphertext $$c_1=42$$ and $$c_2=9$$. Show how the attacker can recover the message.
+
+This is an example of the common modulus attack.
 
 Check $$gcd(e_1,e_2)=1$$
 
@@ -75,7 +83,7 @@ $$5\times7-2\times17=1\Rightarrow a_1=5,a_2=-2$$
 
 $$\begin{align}m&=c_1^{a_1}\times c_2^{a_2}\mod N\\&=42^5\times 9^{-2}\mod 143\\&=100\times 81^{-1}\mod 143\\&=100\times 113\mod 143\\&=3\end{align}$$
 
-Check $$c^7\mod 143=42, 3^{17}\mod 143=9$$
+Check $$3^7\mod 143=42, 3^{17}\mod 143=9$$
 
 ## Q6
 
@@ -89,5 +97,11 @@ $$c^d\mod N=99^{7}\mod (101\times103)=9366$$
 
 Consider an RSA system where the public key of three users \(i.e., $$(n,e)$$ are given by: $$(319,3), (697,3)$$ and $$(1081,3)$$. If the same message was sent to the three users. Show how the attacker can recover $$m$$ by observing the ciphertexts $$c_1=128, c_2=34$$ and $$c_3=589$$.
 
+$$c\equiv m^e\mod N\Rightarrow c\equiv m^3\mod N\Rightarrow m^3=c\mod N$$
 
+This is an example of the low exponent attack explained. The attacker uses the CRT to solve for $$m^3\mod (n_1 n_2 n_3)$$. Just denote $$m^3$$ by $$x$$. Then this is equivalent to solving for $$x$$ that satisfies:
+
+$$\begin{cases} x=128 \mod 319 \\  x=34 \mod 697 \\  x=589 \mod 1081 \end{cases}$$
+
+Using CRT we get $$x=4913\Rightarrow m=4913^{1/3}=17$$.
 
