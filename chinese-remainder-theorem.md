@@ -31,7 +31,7 @@ $$
 has a unique solution for $$x\pmod {m_1m_2\cdots m_n}$$, which is
 
 $$
-x=\Bigg(\sum_{i=1}^{n}{a_ib_ib_i'\Bigg)}\pmod{m_1m_2\cdots m_n}
+x=\sum_{i=1}^{n}{a_ib_ib_i'}\pmod{m_1m_2\cdots m_n}
 $$
 
  where $$b_i = \frac{m_1m_2\cdots m_n}{m_i}$$ and $$b_i' = {b_i}^{-1}\pmod{m_i}$$.
@@ -45,7 +45,7 @@ x=5 \pmod {11}\\
 x=3 \pmod 7
 $$
 
-$$\begin{align}x&=(aqq'+bpp')\mod{pq}\\ &=\Big(5\times7\times(7^{-1}\mod{11})+3\times11\times(11^{-1}\mod{7})\Big)\mod(11\times7)\\ &=(5\times7\times8+3\times11\times2 )\mod{11\times7}\\ &=38\mod{77}\end{align}$$
+$$\begin{align}x&=aqq'+bpp'\pmod{pq}\\ &=5\times7\times\big(7^{-1}\pmod{11}\big)+3\times11\times\big(11^{-1}\pmod{7}\big)\pmod{11\times7}\\ &=5\times7\times8+3\times11\times2 \pmod{11\times7}\\ &=38\pmod{77}\end{align}$$
 
 ### Q2
 
@@ -72,5 +72,5 @@ b_3' = {b_3}^{-1}\pmod{m_3} =77^{-1}\pmod {13} =12
 \end{cases}
 $$
 
-$$\begin{align}x&=\sum_{i=1}^{n}{a_ib_ib_i'}\pmod{m_1m_2\cdots m_n}\\ &=(5\times143\times5+3\times91\times4+10\times77\times12)\pmod{7\times11\times13} \\ &=(3575+1092+9240)\pmod{1001}\\ &=894\end{align}$$
+$$\begin{align}x&=\sum_{i=1}^{n}{a_ib_ib_i'}\pmod{m_1m_2\cdots m_n}\\ &=5\times143\times5+3\times91\times4+10\times77\times12\pmod{7\times11\times13} \\ &=3575+1092+9240\pmod{1001}\\ &=894\end{align}$$
 

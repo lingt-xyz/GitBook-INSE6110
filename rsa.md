@@ -107,11 +107,17 @@ Three possible approaches, all of them are equivalent to factoring $$n$$:
 
 ### Common module
 
-$$c_1 = m^{e_1} \mod n, c_2 = m^{e_2} \mod n$$
+$$c_1 = m^{e_1} \mod N, c_2 = m^{e_2} \mod N$$. If $$gcd(e_1,e_2)=1$$, there exists $$a,b$$ such that$$e_1a + e_2 b = 1$$. Then $$m = c_1^a c_2^b \mod N$$.
 
-$$(e_1)a + (e_2) b = 1$$ if $$gcd(e_1,e_2)=1$$
-
-$$m = c_1^a c_2^b \mod n$$
+$$
+\begin{align}
+c_1^{a}*c_2^{b}&=(m^{e_1})^{a}*(m^{e_2})^{b}\\
+&=m^{e_1a}*m^{e_2b}\\
+&=m^{e_1a+e_2b}\\
+&=m^1\\
+&=m
+\end{align}
+$$
 
 ### Twin prime
 
