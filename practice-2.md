@@ -14,9 +14,9 @@ Shared key: $$K_{x_{ab}}=g^{x_ax_b}\mod p\equiv 6^{13}\mod 101\equiv 65^{19}\mod
 
 Suppose that users Alice and Bob carry out the 3-pass Diffie-Hellman protocol with $$p = 101$$. Suppose that Alice chooses $$a_1 = 19$$ and Bob chooses $$b_1 = 13$$. If Alice wants to send the secret message $$m=5$$ to Bob, show all the messages exchanged between Alice and Bob.
 
-Alice computes $$a_2={a_1}^{-1}\mod (p-1)=$$
+Alice computes $$a_2={a_1}^{-1}\mod (p-1)=79$$
 
-Bob computes $$b_2={b_1}^{-1}\mod (p-1)=$$
+Bob computes $$b_2={b_1}^{-1}\mod (p-1)=77$$
 
 Alice to Bob $$c_1 = m^{a_1}\mod p=$$
 
