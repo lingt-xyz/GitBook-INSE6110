@@ -62,13 +62,38 @@ The smaller the number of 1 bits, the better. Example: $$e= 2^{16} + 1 = 65537$$
 
 ## Cryptanalysis
 
-Key recovery attacks 
+### Key recovery attacks 
 
-Brute force key search 
+### Brute force key search
 
-Timing attacks 
+> 1024 bits means
+>
+> > 179769313486231590772930519078902473361797697894230657273430081157732675805500963132708477322407536021120113879871393357658789768814416622492847430639474124377767893424865485276302219601246094119453082952085005768838150682342462881473913110540827237163350510684586298239947245938479716304835356329624224137216
+>
+> possible numbers. Even with the best computers, it would take far longer than the universe exists.
 
-Mathematical attacks
+{% embed url="https://en.wikipedia.org/wiki/RSA\_Factoring\_Challenge" %}
 
+{% embed url="https://crypto.stackexchange.com/questions/42628/for-rsa-cryptography-how-long-does-it-take-to-factor-out-p-1024-if-given-q-1" %}
 
+### Timing attacks 
+
+By measuring the time required to perform decryption \(exponentiation with the private key as exponent\), an attacker can figure out the private key.
+
+#### Possible countermeasures
+
+* use constant exponentiation time
+* add random delays
+
+### Mathematical attacks
+
+Three possible approaches:
+
+* Factor $$n = pq$$
+* Determine $$\Phi(n)$$
+* Find the private key $$d$$ directly
+
+All of them are equivalent to factoring $$n$$
+
+#### Factoring when knowing $$e$$ and $$d$$
 
