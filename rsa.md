@@ -121,11 +121,15 @@ $$(p, p\pm2)$$
 
 $$N_1=pq_1, N_2=pq_2\Rightarrow gcd(N_1,N_2)=p$$
 
-###  $$x^2,y^2$$
+###  ?$$x^2,y^2$$
 
 $$x\neq y\mod N$$, but $$x^2=y^2\mod N$$, then $$\Rightarrow gcd(N,x\pm y)=p$$
 
-e.g.: 
+e.g.: $$x=68,y=2,N=77$$
+
+$$68\mod77\neq 2\mod 77$$, but $$68^2\mod 77\equiv 2^2\mod 77$$
+
+$$gcd(N,x\pm y)\Rightarrow gcd(77,70)=7, gcd(77,66)=11$$
 
 ### Factoring when knowing $$e$$ and $$d$$
 
