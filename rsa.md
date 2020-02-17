@@ -35,10 +35,6 @@ That's why in RSA only $$N,e,d$$are kept.
 
 ![Alice sending message to Bob](.gitbook/assets/rsa.png)
 
-{% hint style="info" %}
-Compared with Diffie-Hellman, RSA has only one pass and less computation.
-{% endhint %}
-
 ## Examples
 
 ### Q1

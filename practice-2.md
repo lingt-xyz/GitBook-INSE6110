@@ -30,11 +30,11 @@ Bob decrypts $$m={c_4}^{b^2}\mod p=m^{a_1b_1a_2b_2}\mod p=m\mod p=m$$
 
 Consider an RSA system with $$p=7, q=11$$ and $$e=13$$. Find the plaintext corresponding to $$c=17$$.
 
-Compute $$N=pq=$$
+Compute $$N=pq=7\times11=77$$
 
-Compute $$\Phi(N)=(p-1)(q-1)=$$
+Compute $$\Phi(N)=(p-1)(q-1)=6\times10=60$$
 
-Compute $$d=e^{-1}\mod\Phi(N)=$$
+Compute $$d=e^{-1}\mod\Phi(N)={13}^{-1}\mod 60=37$$
 
 Encrypt $$m=c^e\mod N=$$
 
