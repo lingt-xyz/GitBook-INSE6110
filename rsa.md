@@ -111,8 +111,8 @@ $$c_1 = m^{e_1} \mod N, c_2 = m^{e_2} \mod N$$. If $$gcd(e_1,e_2)=1$$, there exi
 
 $$
 \begin{align}
-c_1^{a}*c_2^{b}&=(m^{e_1})^{a}*(m^{e_2})^{b}\\
-&=m^{e_1a}*m^{e_2b}\\
+c_1^{a}\times c_2^{b}&=(m^{e_1})^{a}\times (m^{e_2})^{b}\\
+&=m^{e_1a}\times m^{e_2b}\\
 &=m^{e_1a+e_2b}\\
 &=m^1\\
 &=m
