@@ -18,13 +18,13 @@ Alice computes $$a_2={a_1}^{-1}\mod (p-1)=79$$
 
 Bob computes $$b_2={b_1}^{-1}\mod (p-1)=77$$
 
-Alice to Bob $$c_1 = m^{a_1}\mod p=37$$
+Alice to Bob $$c_1 = m^{a_1}\mod p=$$
 
-Bob to Alice $$c_2={c_1}^{b_1}\mod p = m^{a_1b_1}\mod p=80$$
+Bob to Alice $$c_2={c_1}^{b_1}\mod p = m^{a_1b_1}\mod p=$$
 
-Alice to Bob $$c_3={c_2}^{a_2}\mod p = m^{a_1b_1a_2}\mod p=56$$
+Alice to Bob $$c_3={c_2}^{a_2}\mod p = m^{a_1b_1a_2}\mod p=$$
 
-Bob decrypts $$m={c_4}^{b^2}\mod p=m^{a_1b_1a_2b_2}\mod p=m\mod p=m=5$$
+Bob decrypts $$m={c_4}^{b^2}\mod p=m^{a_1b_1a_2b_2}\mod p=m\mod p=m$$
 
 ## Q3
 
@@ -51,10 +51,6 @@ Decrypt $$m=c^d\mod N=17^{37}\mod 77$$
 Speed up decryption by CRT.
 
 $$\begin{align}m_p&=17^{37}\mod 7\equiv 17^1\mod 7\equiv 3^1\mod 7=3\\m_q&=17^{37}\mod 11\equiv 17^7\mod 11\equiv 6^7\mod 11=8\end{align}$$
-
-$$x\equiv 3\mod7, x\equiv 8\mod11$$
-
-$$3\times 11\times (11^{-1}\mod 7)+8\times7\times(7^{-1}\mod 11)=52$$
 
 ## Q4
 
@@ -92,10 +88,6 @@ $$c^d\mod N=99^{7}\mod (101\times103)=9366$$
 ## Q7
 
 Consider an RSA system where the public key of three users \(i.e., $$(n,e)$$ are given by: $$(319,3), (697,3)$$ and $$(1081,3)$$. If the same message was sent to the three users. Show how the attacker can recover $$m$$ by observing the ciphertexts $$c_1=128, c_2=34$$ and $$c_3=589$$.
-
-$$c\equiv m^e\mod N\Rightarrow c\equiv m^3\mod N\Rightarrow m^3=c\mod N$$
-
-This is an example of the low exponent attack explained. The attacker uses the CRT to solve for $$m^3\mod (n_1 n_2 n_3)$$. Just denote $$m^3$$ by $$x$$. Then this is equivalent to solving for $$x$$ that satisfies $$x=128 \mod 319$$, $$x=34 \mod 697$$ and $$x=589 \mod 1081$$. Using CRT we get $$x=4913,m=4913^{1/3}=17$$.
 
 
 
