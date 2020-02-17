@@ -37,9 +37,7 @@ That's why in RSA only $$N,e,d$$are kept.
 Compared with Diffie-Hellman, RSA has only one pass and less computation.
 {% endhint %}
 
-## Examples
-
-### Q1
+### Example
 
 $$p = 11, q = 7\Rightarrow n = 77, \Phi(n) = 60$$
 
