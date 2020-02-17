@@ -61,6 +61,8 @@ The smaller the number of 1 bits, the better. Example: $$e= 2^{16} + 1 = 65537$$
 
 See practice 2 problem 3
 
+{% embed url="https://crypto.stackexchange.com/questions/2575/chinese-remainder-theorem-and-rsa" %}
+
 ## Parameter selections
 
 * RSA usually described as the number of bits for $$n$$. Current recommendation is at least $$1024$$ bits for $$n$$.
