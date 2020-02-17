@@ -105,23 +105,25 @@ Three possible approaches, all of them are equivalent to factoring $$n$$:
 
 ### Protocol failure
 
-#### Low exponent
+#### 1. Low exponent
 
-#### Common module
+#### 2. Common module
 
 ### Factoring
 
-#### Twin prime
+#### 1. Twin prime
 
 $$(p, p\pm2)$$
 
-#### Common $$p$$
+#### 2. Common $$p$$
 
 $$N_1=pq_1, N_2=pq_2\Rightarrow gcd(N_1,N_2)=p$$
 
-#### $$x^2,y^2$$
+#### 3. $$x^2,y^2$$
 
 $$x\neq y\mod N$$, but $$x^2=y^2\mod N$$, then $$\Rightarrow gcd(N,x\pm y)=p$$
+
+e.g.: 
 
 #### Factoring when knowing $$e$$ and $$d$$
 
