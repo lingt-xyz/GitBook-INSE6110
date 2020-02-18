@@ -35,3 +35,13 @@ A simple substitution is a one-to-one mapping in the sense that each plaintext s
 
 Homophonic substitutions—in which a plaintext symbol can map to more than one ciphertext symbol.
 
+Suppose that a given homophonic substitution cipher has n distinct ciphertext symbols, and the plaintext is English. Assuming that each of the 26 plaintext letters maps to at least one ciphertext symbol, the theoretical key space is of size
+
+$$
+\binom{n}{26}26!26^{n-26}
+$$
+
+* $$\binom{n}{26}$$: from $$n$$ciphertext letters choose $$26$$ letters.
+* $$26!$$: there are $$26!$$ways to map these letters to plaintext letters one to one.
+* $$26^{n-26}$$: for the rest of ciphertext letters $$(n-26)$$, each of them can be mapped to one of the $$26$$ plaintext letter.
+
