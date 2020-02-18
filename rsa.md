@@ -37,9 +37,7 @@ That's why in RSA only $$N,e,d$$are kept.
 Compared with Diffie-Hellman, RSA has only one pass and less computation.
 {% endhint %}
 
-## Examples
-
-### Q1
+### Example
 
 $$p = 11, q = 7\Rightarrow n = 77, \Phi(n) = 60$$
 
@@ -57,7 +55,7 @@ The smaller the number of 1 bits, the better. Example: $$e= 2^{16} + 1 = 65537$$
 
 ## Speed up decryption
 
-See practice 2 problem 3
+See [Practice 2 problem 3](https://inse6110.lingt.xyz/practice-2#q3)
 
 {% embed url="https://crypto.stackexchange.com/questions/2575/chinese-remainder-theorem-and-rsa" %}
 
@@ -103,27 +101,41 @@ Three possible approaches, all of them are equivalent to factoring $$n$$:
 
 ## Examples
 
-### Protocol failure
+### Low exponent
 
-#### 1. Low exponent
+See [Practice 2 problem 7](https://inse6110.lingt.xyz/practice-2#q7)
 
-#### 2. Common module
+### Common module
 
-### Factoring
+$$c_1 = m^{e_1} \mod N, c_2 = m^{e_2} \mod N$$. If $$gcd(e_1,e_2)=1$$, there exists $$a,b$$ such that$$e_1a + e_2 b = 1$$. Then $$m = c_1^a c_2^b \mod N$$.
 
-#### 1. Twin prime
+$$
+\begin{align}
+c_1^{a}\times c_2^{b}&=(m^{e_1})^{a}\times (m^{e_2})^{b}\\
+&=m^{e_1a}\times m^{e_2b}\\
+&=m^{e_1a+e_2b}\\
+&=m^1\\
+&=m
+\end{align}
+$$
+
+### Twin prime
 
 $$(p, p\pm2)$$
 
-#### 2. Common $$p$$
+### Common $$p$$
 
 $$N_1=pq_1, N_2=pq_2\Rightarrow gcd(N_1,N_2)=p$$
 
-#### 3. $$x^2,y^2$$
+### Factoring when knowing $$e$$ and $$d$$
 
-$$x\neq y\mod N$$, but $$x^2=y^2\mod N$$, then $$\Rightarrow gcd(N,x\pm y)=p$$
+### Multiplicative property
 
-e.g.: 
+$$c_1 c_2 = m_1^e m_2^e \mod n = (m_1m_2 )^e \mod N$$
 
-#### Factoring when knowing $$e$$ and $$d$$
+Attacker chooses $$x$$ and computes $$c' = c x^e \mod N$$.
+
+Asks Alice to decrypt it so, $${c'}^d = c^d x \mod N = mx \mod N$$
+
+
 
