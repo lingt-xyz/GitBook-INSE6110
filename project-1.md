@@ -21,11 +21,17 @@ The resulting text will have a certain similarity to the expected language of th
 
 In the iterated loop which follows we first alter the current key a little bit, then this key is used to decrypt the ciphertext once again and finally we check if the contents of the new resulting text are closer to the expected language than those of the previously decrypted text. If they are, we keep the new key for the next iteration, if not the old one is used but modified in another way next time the loop is run through etc.
 
-a function which reflects "how close" the contents of a given text are to the expected language.
+### Goodness
+
+A function which reflects "how close" the contents of a given text are to the expected language.
+
+### Drawback
+
+The ciphertext must be re-parsed at every iteration.
 
 ## [Efficient Cryptanalysis of Homophonic Substitution Ciphers](https://moodle.concordia.ca/moodle/pluginfile.php/3909362/mod_resource/content/0/Substitution%20ciphers.pdf)
 
 A simple substitution is a one-to-one mapping in the sense that each plaintext symbol corresponds to one ciphertext symbol.
 
-Homophonic substitutions—in which a plaintext symbol can map to more than one ciphertext symbol
+Homophonic substitutions—in which a plaintext symbol can map to more than one ciphertext symbol.
 
