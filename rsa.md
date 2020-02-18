@@ -121,7 +121,7 @@ $$
 
 ### Twin prime
 
-$$(p, p\pm2)$$
+$$(p,q)=(p, p\pm2)$$
 
 ### Common $$p$$
 
