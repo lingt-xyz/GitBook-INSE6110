@@ -267,3 +267,9 @@ $$\Rightarrow$$
 
 $${159}^{101}\pmod{551}={197\times49\times368\times159}\pmod{551}=11$$
 
+## Q7
+
+Find the least significant number of $$9^{1234577891}$$
+
+$$\begin{align}9^{1234577891}\mod 10&=9^{1234577891\mod\Phi(10)}\mod 10\\ &=9^{1234577891\mod4}\mod 10\\ &=9^{3}\mod 10 \\&=7\end{align}$$
+
