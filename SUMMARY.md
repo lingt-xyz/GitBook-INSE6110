@@ -6,6 +6,7 @@
 * [Project](project-1.md)
 * [Practice 1](practice-1.md)
 * [Practice 2](practice-2.md)
+* [Practice 3](practice-3.md)
 
 ## Number Theory
 
