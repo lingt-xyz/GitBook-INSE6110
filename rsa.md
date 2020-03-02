@@ -105,7 +105,7 @@ Three possible approaches, all of them are equivalent to factoring $$n$$:
 
 See [Practice 2 problem 7](https://inse6110.lingt.xyz/practice-2#q7)
 
-### Common module
+### Common **Modulus**
 
 $$c_1 = m^{e_1} \mod N, c_2 = m^{e_2} \mod N$$. If $$gcd(e_1,e_2)=1$$, there exists $$a,b$$ such that$$e_1a + e_2 b = 1$$. Then $$m = c_1^a c_2^b \mod N$$.
 
