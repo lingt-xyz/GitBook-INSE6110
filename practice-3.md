@@ -10,7 +10,7 @@ Consider the public key cryptosystem with the encryption function $$e(x)=x(x+B) 
 Solution
 
 1. $$e(m)=m(m+1357)\pmod {199\times211}=32767(32767+1357)\mod 41989$$
-2. $$\begin{align}&c=x^2+Bx\pmod{n}\\ \Rightarrow &x^2+Bx-c=0\pmod{n}\end{align}$$
+2. $$\begin{align}&c=x^2+Bx\pmod{n}\\ \Rightarrow &x^2+Bx-c=0\pmod{n}\\ \Rightarrow&x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\pmod{n}\end{align}$$
 
 
 
