@@ -26,4 +26,6 @@
 * [Diffie-Hellman](diffie-hellman.md)
 * [RSA](rsa.md)
 * [Rabin Public Key Encryption](rabin-public-key-encryption.md)
+* [Hash](hash.md)
+* [Digital Signature](digital-signature.md)
 
