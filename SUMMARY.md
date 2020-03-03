@@ -25,4 +25,5 @@
 * [Number Theory Problems](number-theory-problems.md)
 * [Diffie-Hellman](diffie-hellman.md)
 * [RSA](rsa.md)
+* [Rabin Public Key Encryption](rabin-public-key-encryption.md)
 
