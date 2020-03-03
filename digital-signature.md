@@ -1,6 +1,6 @@
 # Digital Signature
 
-## Services provided:
+## Services provided
 
 1. Authentication
 2. Data integrity
