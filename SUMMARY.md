@@ -38,6 +38,7 @@
 
 * [Hash](hash-1/hash.md)
 * [MAC](hash-1/mac.md)
+* [Communication Scheme](hash-1/communication-scheme.md)
 
 ## Signature
 
