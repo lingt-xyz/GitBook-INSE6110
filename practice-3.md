@@ -29,6 +29,16 @@ $$
 \Rightarrow\begin{cases}m_{199}&={132}^{{\frac {1}{4}}(199+1)}{\pmod {199}}\\m_{211}&={16}^{{\frac {1}{4}}(211+1)}{\pmod {211}}\end{cases}\Rightarrow\begin{cases}m_{199}&={132}^{50}{\pmod {199}}\\m_{211}&={16}^{53}{\pmod {211}}\end{cases}
 $$
 
+| $$R_i$$ | $$D_i$$ | $$S_i$$ |
+| :--- | :--- | :--- |
+| 211 |  | 0 |
+| 199 | 1 | 1 |
+| 12 | 16 | $$0-1\times1=-1$$ |
+| 7 | 1 | $$1-(-1)\times16=17$$ |
+| 5 | 1 | $$-1-17\times1=-18$$ |
+| 2 | 2 | $$17-(-18)\times1=35$$ |
+| 1 |  | $$-18-35\times2=-88$$ |
+
 Then use the CRT to obtain the 4 square roots mod $$n$$. The four possible messages are 21795, 7865, 32767, 18837.
 
 ## P2
