@@ -37,6 +37,7 @@
 ## Hash <a id="hash-1"></a>
 
 * [Hash](hash-1/hash.md)
+* [MAC](hash-1/mac.md)
 
 ## Signature
 
