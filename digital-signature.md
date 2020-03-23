@@ -12,13 +12,13 @@
 | Data integrity | ✔  | ✔  | ✔  |
 | Non-Repudiation |  | ✔  |  |
 
-## Attack Models
+## Cryptanalysis
 
 * Key-only attack: Adversary knows only the verification function \(which is supposed to be public\).
 * Known message attack: Adversary knows a list of messages previously signed by Alice. 
 * Chosen message attack: Adversary can choose what messages wants Alice to sign, and he knows both the messages and the corresponding signatures.
 
-### Adversarial Goals
+## Adversarial Goals
 
 * Total break: adversary is able to find the secret for signing, so he can forge then any signature on any message. 
 * Selective forgery: adversary is able to create valid signatures on a message chosen by someone else, with a significant probability. 
