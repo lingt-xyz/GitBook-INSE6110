@@ -17,7 +17,7 @@ Secret key: $$d$$. $$p$$ and $$q$$ must also remain secret.
 ## RSA Signature
 
 1. Signing the message $$m$$
-   * Use private key $$d$$, compute $$S=m^d\pmod N$$.
+   * Use private key $$d$$, compute $$S_d=m^d\pmod N$$.
 2. Verifying signature$$S$$
    * User public key $$(e,N)$$, compute $$S_e=\big(m^d\pmod N\big)^e\pmod N=m$$
 
