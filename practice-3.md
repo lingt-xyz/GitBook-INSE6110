@@ -56,13 +56,13 @@ Thus the secret $$a_0=1$$
 
 ## P3
 
-Consider ElGamal signature scheme as described in lecture. In practical applications, explain what the signer should do if “S” turns out to be equal to zero. Why?
+Consider ElGamal signature scheme as described in lecture. In practical applications, explain what the signer should do if $$s$$ turns out to be equal to zero. Why?
 
 #### Solution
 
 Change the random number.
 
-$$S'=0\Rightarrow h(m)-xr=0\Rightarrow x=h(m)\cdot r^{-1}\pmod {p-1}$$
+$$s=0\Rightarrow (h(m)-xr)k^{-1}{\pmod {p-1}}=0\Rightarrow x=h(m)\cdot r^{-1}\pmod {p-1}$$
 
 ## P4
 
