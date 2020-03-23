@@ -1,6 +1,6 @@
 # ElGamal
 
-Its security based on the intractability of the discrete logarithm problem.
+Its security based on the intractability of the **discrete logarithm problem**.
 
 Message expansion: the ciphertext is twice as big as the original message.
 
