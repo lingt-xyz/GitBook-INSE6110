@@ -20,13 +20,14 @@ $$
 \begin{align}
 x&=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\pmod{n}\\
 &=\frac{-B\pm\sqrt{B^2+4c}}{2}\pmod{n}\\
-&=\frac{-1357\pm\sqrt{{1357}^2+4\times16027}}{2}\pmod{n}\\
-&=\frac{-1357\pm\sqrt{1905557}}{2}\pmod{n}\end{align}
+&=\frac{-1357\pm\sqrt{{1357}^2+4\times16027}}{2}\pmod{pq}\\
+&=\frac{-1357\pm\sqrt{1905557}}{2}\pmod{199\times211}\\
+&=\frac{-1357\pm\sqrt{16052}}{2}\pmod{199\times211}\end{align}
 $$
 
 $$
-\begin{cases}m_{p}&=c^{{\frac {1}{4}}(p+1)}{\pmod {p}}\\m_{q}&=c^{{\frac {1}{4}}(q+1)}{\pmod {q}}\end{cases}\Rightarrow\begin{cases}m_{199}&={1905557}^{{\frac {1}{4}}(199+1)}{\pmod {199}}\\m_{211}&={1905557}^{{\frac {1}{4}}(211+1)}{\pmod {211}}\end{cases}\\
-\Rightarrow\begin{cases}m_{199}&={132}^{{\frac {1}{4}}(199+1)}{\pmod {199}}\\m_{211}&={16}^{{\frac {1}{4}}(211+1)}{\pmod {211}}\end{cases}\Rightarrow\begin{cases}m_{199}&={132}^{50}{\pmod {199}}\\m_{211}&={16}^{53}{\pmod {211}}\end{cases}
+\begin{align}&\begin{cases}m_{p}=c^{{\frac {1}{4}}(p+1)}{\pmod {p}}\\m_{q}=c^{{\frac {1}{4}}(q+1)}{\pmod {q}}\end{cases}\\\Rightarrow&\begin{cases}m_{199}={16052}^{{\frac {1}{4}}(199+1)}{\pmod {199}}\\m_{211}={16052}^{{\frac {1}{4}}(211+1)}{\pmod {211}}\end{cases}\\
+\Rightarrow&\begin{cases}m_{199}={132}^{50}{\pmod {199}}\\m_{211}={16}^{53}{\pmod {211}}\end{cases}\\\Rightarrow&\begin{cases}m_{199}=172{\pmod {199}}\\m_{211}=4{\pmod {211}}\end{cases}\end{align}
 $$
 
 | $$R_i$$ | $$D_i$$ | $$S_i$$ |
