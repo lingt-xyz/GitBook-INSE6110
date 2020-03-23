@@ -43,4 +43,7 @@
 
 * [Digital Signature](digital-signature.md)
 * [RSA Signature](rsa-signature.md)
+* [ElGamal Signature](elgamal-signature.md)
+* [Secret Sharing](secret-sharing.md)
+* [Blind Signature](blind-signature.md)
 
