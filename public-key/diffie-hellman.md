@@ -2,12 +2,12 @@
 
 ## 3-pass
 
-### Algorithm
+## Key generation
 
-* $$p$$: a large prime integer, _**public**_
-* $$a_1,a_2$$: Alice's private keys
+* $$p$$: a large prime integer; _**public**_
+* $$a_1,a_2$$: Alice's **private** keys
   * $$a_2\equiv {a_1}^{-1}\pmod {p-1}$$
-* $$b_1,b_2$$: Bob's private keys
+* $$b_1,b_2$$: Bob's **private** keys
   * $$b_2\equiv {b_1}^{-1}\pmod {p-1}$$
 * $$m$$: message to be passed from Alice to Bob
 
@@ -28,10 +28,10 @@ $$(m^{a_1b_1a_2}\pmod p)^{b_2}\pmod p\equiv m^{a_1b_1a_2b_2}\pmod p\equiv m$$
 
 ## 2-pass \(Key Exchange\)
 
-### Algorithm
+### Key generation
 
-* $$p$$, a large prime integer, _**public**_
-* $$g$$, a primitive root mod $$p$$\(also called a generator\), _**public**_
+* $$p$$, a large prime integer; _**public**_
+* $$g$$, a primitive root mod $$p$$\(also called a generator\); _**public**_
 * Key $$K_{ab}$$is then obtained by both parties calculating:
   * $$a,b$$ are private to Alice and Bob respectively
   * $$K_{ab}=g^{ab}\pmod p$$

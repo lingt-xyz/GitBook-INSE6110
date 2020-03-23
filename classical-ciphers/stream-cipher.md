@@ -13,7 +13,7 @@ Why? To reduce information exposure.
 e.g.: If there is a capital letter, this could mean this letter is a beginning of a sentence.
 {% endhint %}
 
-## Algorithm
+## Key generation
 
 Define plaintext space and cipher space over $$\Bbb{Z}_{26}$$:
 

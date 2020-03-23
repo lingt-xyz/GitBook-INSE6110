@@ -8,10 +8,10 @@ So attacks on RSA can be applied on Rabin cryptosystem.
 
 {% embed url="https://en.wikipedia.org/wiki/Rabin\_cryptosystem" %}
 
-## Algorithm
+## Key generation
 
-* $$p,q$$: large prime integers, such that $$p\equiv3\pmod4$$and $$q\equiv3\pmod4$$, _**private**_
-* $$N$$: compute$$N=pq$$, _**public**_
+* $$p,q$$: large prime integers, such that $$p\equiv3\pmod4$$and $$q\equiv3\pmod4$$; _**private**_
+* $$N$$: compute$$N=pq$$; _**public**_
 
 ## Encryption: 
 

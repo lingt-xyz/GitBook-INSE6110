@@ -4,13 +4,13 @@ Invented in 1978 by Ron **R**ivest, Adi **S**hamir and Leonard **A**dleman.
 
 Based on intractability of the integer factor factorization problem.
 
-## Algorithm
+## Key generation
 
-* $$p,q$$: large prime integers, _**private**_
-* $$N$$: compute$$N=pq$$, _**public**_
-* _\*\*\*\*_$$\Phi(N)$$: compute $$\Phi(N)=(p-1)(q-1)$$, _**private**_
-* $$e$$: choose a random integer $$e: 1< e < \Phi(N) $$, such that gcd$$(e,\Phi(N))=1$$, _**public**_
-* $$d$$: determine the unique integer $$d:1< d <\Phi(N)$$, such that $$ed\equiv1\mod{\Phi(N)}$$, _**private**_
+* $$p,q$$: large prime integers; _**private**_
+* $$N$$: compute$$N=pq$$; _**public**_
+* _\*\*\*\*_$$\Phi(N)$$: compute $$\Phi(N)=(p-1)(q-1)$$; _**private**_
+* $$e$$: choose a random integer $$e: 1< e < \Phi(N) $$, such that gcd$$(e,\Phi(N))=1$$; _**public**_
+* $$d$$: determine the unique integer $$d:1< d <\Phi(N)$$, such that $$ed\equiv1\mod{\Phi(N)}$$; _**private**_
 
 {% hint style="warning" %}
 $$p,q$$do not need to be kept after $$N,d$$is computed.
