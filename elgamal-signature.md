@@ -6,7 +6,7 @@ As in ElGamal encryption:
 
 * $$p$$: a large prime integer; public.
 * $$g$$: a primitive root mod $$p$$\(also called a generator\); public.
-* $$x$$: choose an integer $$x$$randomly from $$\{1,2,\dots,q-1\}$$; private.
+* $$x$$: choose an integer $$x$$randomly from $$\{1,2,\dots,p-2\}$$; private.
 * $$y$$: compute $$y=g^x\pmod p$$; public.
 
 ## Signing
