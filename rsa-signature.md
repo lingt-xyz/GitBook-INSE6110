@@ -1,6 +1,6 @@
 # RSA Signature
 
-## Key generation
+## Key Generation
 
 As in RSA encryption:
 

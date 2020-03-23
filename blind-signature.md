@@ -4,7 +4,7 @@
 
 Blind signatures are typically employed in privacy-related protocols where the signer and message author are different parties. Examples include cryptographic election systems and [digital cash](https://en.wikipedia.org/wiki/Digital_cash) schemes.
 
-## Blind RSA signature
+## Blind RSA Signature
 
 1. The author of the message computes the product of the message $$m$$ and blinding factor $$r$$, i.e.: $$m'\equiv mr^e\pmod N$$, where $$(e,N)$$is the signing authority's RSA public key.
 2. The signing authority then calculates the blinded signature $$s'$$ as: $$s'\equiv (m')^d\pmod N$$.
