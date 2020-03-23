@@ -54,3 +54,9 @@ But we have options to sign first or encrypt first.
      * $$c_1=(c_2)^{e_A}\pmod {N_A}$$
      * $$m=c_1^{d_B}\pmod {N_B}$$
 
+{% hint style="warning" %}
+The size of $$N$$will determine the size of the message $$m$$.
+
+If $$N_A<N_B$$and Alice encrypt first, $$c_1=m^{e_B}\pmod {N_B}$$would be truncated to $$c_2$$by using a short $$N_A$$.
+{% endhint %}
+
