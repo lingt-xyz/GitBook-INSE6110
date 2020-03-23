@@ -10,7 +10,8 @@ Uses randomization, each message has $$p-1$$ possible different encryptions.
 
 * $$p$$, a large prime integer
 * $$g$$, a primitive root mod $$p$$\(also called a generator\)
-* Public key is $$y=g^k$$, private key is $$k$$
+* $$x$$, choose an integer $$x$$randomly from $$\{1,2,\dots,q-1\}$$; private.
+* $$h$$: compute $$h=g^x$$; public.
 
 ## Encryption
 
