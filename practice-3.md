@@ -14,15 +14,35 @@ Solution
 
 ## P2
 
+Consider a $$(4,3)$$ Shamir secret sharing scheme with $$p=17$$. Show how the secret can be recovered from the following shares: $$(1,10), (2,16)$$, and $$(3,2)$$.
+
+Form 3 equations in 3 unknowns. 10=a0+a1+a2 mod 17 16=a0+2a1+4a2 mod 17 2=a0+3 a1+9a2 mod 17 =&gt; a0=1, a1=2 and a2=7. Thus the secret =a0=1
+
 ## P3
 
 Consider ElGamal signature scheme as described in lecture. In practical applications, explain what the signer should do if “S” turns out to be equal to zero. Why?
 
+Change the random number.
 
+$$S'=0\Rightarrow h(m)-xr=0\Rightarrow x=h(m)\cdot r^{-1}\pmod {p-1}$$
 
 ## P4
 
+Suppose that Alice is using the ElGamal Signature Scheme. In order to save time in generating the random numbers $$k$$ that are used to sign messages, Alice chooses an initial random value $$k_0$$ and then signs the $$i$$th message using the value $$k_i=k_0+2i \pmod p$$ \(therefore $$k_i=k_i-1 + 2 \pmod p$$ for all $$i\geq1$$. Suppose that an attacker observes two consecutive signed messages, say $$\large(x_i,sign(x_i)\large)$$ and$$\large (x_i+1,sign(x_i+1)\large)$$. Given this information, describe how the attacker can easily compute Alice’s secret key $$a$$.
+
 ## P5
+
+Show that given a legitimate ElGamal signature $$(s,r)$$ on a given message $$m$$, an attacker can compute a signature on messages of the form: $$m'=(m+bs) a \pmod {p−1}$$, where $$a, b$$ are chosen by the attacker and $$a=g^b\pmod p$$.
+
+#### Solution
+
+Since $$(s,r)$$ is a valid signature on $$m$$, then we have $$g^ m = y^r r^s = g^{xr+sk} \pmod p$$. 
+
+Now to forge the signature on $$m'$$, we need to have $$g^{m'} = g^{am+abs}\pmod p=g^{a(xr+sk)+abs}=g^{axr+ask+abs} \pmod p = y^{r'} r'^{s'} \pmod p$$.
+
+By comparing both sides, we have $$r'= ar \pmod p=g^{k+b} \pmod p$$, $$s'=as \pmod {p-1}$$.
+
+You can verify that it works by doing the following: $$y^{r'} r'^{s'} = y^{ra} r'^{as} = g^{xra} {g^{k+b}}^{as'} = g^{xra+ask+asb}=g^{m'} \pmod p$$
 
 ## P6
 
