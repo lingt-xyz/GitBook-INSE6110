@@ -61,3 +61,17 @@ This gives the hard knapsack: $$B=\{17,\underline{34},31,\underline{25},\underli
 
 ## Application
 
+**User R**: Publishes $$B=\{17,34,31,25,13\}$$. Keeps $$A=\{1,2,4,8,16\},t=17,t^{-1}=24$$, and $$p=37$$private.
+
+**User S**: Wants to send the message $$m=12$$to User R.
+
+1. $$m=12=(01100)_2$$
+2. $$c=0\cdot17+1\cdot34+1\cdot31+0\cdot25+0\cdot13=65$$.
+3. send $$c=65$$to User R.
+
+**User R**: Recivies $$c=65$$
+
+1. compute $$c'=65t^{-1}=65\cdot24\equiv 6\pmod37$$.
+2. Solves the easy knapsack problem: $$6=0\cdot1+1\cdot2+1\cdot4+0\cdot8+0\cdot16$$
+3. The gives the message as $$(01100)_2=12$$.
+
