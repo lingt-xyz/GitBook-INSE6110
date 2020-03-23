@@ -1,4 +1,4 @@
-# ElGamal
+# ElGamal Encryption
 
 Its security based on the intractability of the **discrete logarithm problem**.
 

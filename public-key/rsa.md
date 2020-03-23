@@ -1,4 +1,4 @@
-# RSA
+# RSA Encryption
 
 Invented in 1978 by Ron **R**ivest, Adi **S**hamir and Leonard **A**dleman.
 

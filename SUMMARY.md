@@ -28,9 +28,9 @@
 
 * [Public key cryptography](public-key/public-key-cryptography.md)
 * [Diffie-Hellman](public-key/diffie-hellman.md)
-* [RSA](public-key/rsa.md)
+* [RSA Encryption](public-key/rsa.md)
 * [Rabin Public Key Encryption](public-key/rabin-public-key-encryption.md)
-* [ElGamal](public-key/elgamal.md)
+* [ElGamal Encryption](public-key/elgamal.md)
 * [McEliece PKE](public-key/mceliece-pke.md)
 * [Knapsack](public-key/knapsack.md)
 
