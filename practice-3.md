@@ -50,7 +50,7 @@ Consider a $$(4,3)$$ Shamir secret sharing scheme with $$p=17$$. Show how the se
 
 Form 3 equations in 3 unknowns. 
 
-$$\begin{cases}10=a_0+a_1+a_2 \pmod {17}\\ 16=a_0+2a_1+4a_2 \pmod {17}\\ 2=a_0+3 a_1+9a_2 \pmod {17}\end{cases}\Rightarrow\begin{cases}a_0=1\\a_1=2\\a_2=7\end{cases}$$ 
+$$\begin{cases}10=a_0+a_1+a_2 \pmod {17}\\ 16=a_0+2a_1+4a_2 \pmod {17}\\ 2=a_0+3 a_1+9a_2 \pmod {17}\end{cases}\Rightarrow\begin{cases}a_0=-16\equiv 1\pmod {17}\\a_1=36\equiv 2\pmod {17}\\a_2=-10\equiv 7\pmod {17}\end{cases}$$ 
 
 Thus the secret $$a_0=1$$
 
