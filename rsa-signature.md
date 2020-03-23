@@ -21,7 +21,15 @@ Secret key: $$d$$. $$p$$ and $$q$$ must also remain secret.
 2. Verifying signature$$S$$
    * User public key $$(e,N)$$, compute $$S_e=\big(m^d\pmod N\big)^e\pmod N=m$$
 
+{% hint style="warning" %}
+* Should sign the message $$m$$ or sign the hash $$h(m)$$?
+{% endhint %}
+
 ## Cryptanalysis
 
+### Multiplicative property
 
+See [https://inse6110.lingt.xyz/practice-3\#p6](https://inse6110.lingt.xyz/practice-3#p6)
+
+Sign $$h(m)$$to prevent this attack.
 
