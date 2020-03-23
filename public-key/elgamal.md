@@ -4,7 +4,7 @@ Its security based on the intractability of the **discrete logarithm problem**.
 
 Message expansion: the ciphertext is twice as big as the original message.
 
-Uses randomization, each message has p-1 possible different encryptions.
+Uses randomization, each message has $$p-1$$ possible different encryptions.
 
 ## Algorithm
 
