@@ -11,7 +11,7 @@ Blind signatures are typically employed in privacy-related protocols where the s
 3. The signing authority sends $$s'$$back to the author of the message.
 4. The author of the message can then remove the blinding factor to reveal $$s$$, the valid signature of $$m$$: $$s\equiv s'\cdot r^{-1}\pmod N$$.
 
-## Proof
+## Correctness
 
 $$r^{ed}\equiv r{\pmod {N}}$$
 
