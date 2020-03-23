@@ -23,13 +23,22 @@
 
 * [Stream Cipher](classical-ciphers/stream-cipher.md)
 * [Block Cipher](classical-ciphers/block-cipher.md)
-* [Public key cryptography](public-key-cryptography.md)
-* [Diffie-Hellman](diffie-hellman.md)
-* [RSA](rsa.md)
-* [Rabin Public Key Encryption](rabin-public-key-encryption.md)
-* [ElGamal](elgamal.md)
-* [McEliece PKE](mceliece-pke.md)
-* [Knapsack](knapsack.md)
-* [Hash](hash.md)
+
+## Public Key
+
+* [Public key cryptography](public-key/public-key-cryptography.md)
+* [Diffie-Hellman](public-key/diffie-hellman.md)
+* [RSA](public-key/rsa.md)
+* [Rabin Public Key Encryption](public-key/rabin-public-key-encryption.md)
+* [ElGamal](public-key/elgamal.md)
+* [McEliece PKE](public-key/mceliece-pke.md)
+* [Knapsack](public-key/knapsack.md)
+
+## Hash <a id="hash-1"></a>
+
+* [Hash](hash-1/hash.md)
+
+## Signature
+
 * [Digital Signature](digital-signature.md)
 

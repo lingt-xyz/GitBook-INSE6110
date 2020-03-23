@@ -31,7 +31,7 @@ That's why in RSA only $$N,e,d$$are kept.
   1. Since $$ed\equiv1\mod{\Phi(N)}$$, there exists an integer $$k$$ such that $$ed\equiv1+k\cdot \Phi(N)$$
   2. $$c^d=m^{ed}=m^{1+k\cdot \Phi(N)}=m^1\cdot m^{k\cdot \Phi(N)}=m^1\cdot (m^{\Phi(N)})^k=m^1\cdot (1)^k=m$$
 
-![Alice sending message to Bob](.gitbook/assets/rsa.png)
+![Alice sending message to Bob](../.gitbook/assets/rsa.png)
 
 {% hint style="info" %}
 Compared with Diffie-Hellman, RSA has only one pass and less computation.
