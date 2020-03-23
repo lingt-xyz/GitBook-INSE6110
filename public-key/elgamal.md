@@ -8,9 +8,9 @@ Uses randomization, each message has $$p-1$$ possible different encryptions.
 
 ## Algorithm
 
-* $$p$$, a large prime integer
-* $$g$$, a primitive root mod $$p$$\(also called a generator\)
-* $$x$$, choose an integer $$x$$randomly from $$\{1,2,\dots,q-1\}$$; private.
+* $$p$$: a large prime integer.
+* $$g$$: a primitive root mod $$p$$\(also called a generator\).
+* $$x$$: choose an integer $$x$$randomly from $$\{1,2,\dots,q-1\}$$; private.
 * $$h$$: compute $$h=g^x$$; public.
 
 ## Encryption
