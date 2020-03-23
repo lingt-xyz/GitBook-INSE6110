@@ -24,6 +24,10 @@ x&=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\pmod{n}\\
 &=\frac{-1357\pm\sqrt{1905557}}{2}\pmod{n}\end{align}
 $$
 
+$$
+\begin{cases}m_{p}&=c^{{\frac {1}{4}}(p+1)}{\pmod {p}}\\m_{q}&=c^{{\frac {1}{4}}(q+1)}{\pmod {q}}\end{cases}\Rightarrow\begin{cases}m_{199}&={1905557}^{{\frac {1}{4}}(199+1)}{\pmod {199}}\\m_{211}&={1905557}^{{\frac {1}{4}}(211+1)}{\pmod {211}}\end{cases}
+$$
+
 Then use the CRT to obtain the 4 square roots mod $$n$$. The four possible messages are 21795, 7865, 32767, 18837.
 
 ## P2
