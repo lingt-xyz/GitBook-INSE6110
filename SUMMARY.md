@@ -48,3 +48,8 @@
 * [Blind Signature](blind-signature.md)
 * [Secret Sharing](secret-sharing.md)
 
+## Block Cipher
+
+* [SPN](block-cipher/spn.md)
+* [Feistel Structure](block-cipher/feistel-structure.md)
+
