@@ -33,3 +33,14 @@ See [https://inse6110.lingt.xyz/practice-3\#p6](https://inse6110.lingt.xyz/pract
 
 Sign $$h(m)$$to prevent this attack.
 
+## Sign First or Encrypt First
+
+In practical, both message and signature should be encrypted.
+
+But we have options to sign first or encrypt first.
+
+1. If$$N_A<N_B$$
+   * Alice signs first.
+   * $$c_1=m^{d_A}\pmod {N_A}$$
+   * $$c_2=m^{e_B}\pmod {N_B}$$
+
