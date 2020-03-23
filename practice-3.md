@@ -9,10 +9,22 @@ Consider the public key cryptosystem with the encryption function $$e(x)=x(x+B) 
 
 #### Solution
 
-1. $$e(m)=m(m+1357)\pmod {199\times211}=32767(32767+1357)\mod 41989$$
-2. $$c=x^2+Bx\pmod{n} \Rightarrow x^2+Bx-c=0\pmod{n} \Rightarrow x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\pmod{n}$$. 
+1. $$e(m)=m(m+1357)\pmod {199\times211}=32767(32767+1357)\mod 41989=16027$$
+2. Use the fact that if $$p=3 \pmod 4$$ then the square root of $$x \pmod p$$ is given by $$x ^{(p+1)/4}$$.
 
-Use the fact that if $$p=3 \pmod 4$$ then the square root of $$x \pmod p$$ is given by $$x ^{(p+1)/4}$$. Then use the CRT to obtain the 4 square roots mod $$n$$. The four possible messages are 21795, 7865, 32767, 18837.
+$$
+c=x^2+Bx\pmod{n} \Rightarrow x^2+Bx-c=0\pmod{n}
+$$
+
+$$
+\begin{align}
+x&=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\pmod{n}\\
+&=\frac{-B\pm\sqrt{B^2+4c}}{2}\pmod{n}\\
+&=\frac{-1357\pm\sqrt{{1357}^2+4\times16027}}{2}\pmod{n}\\
+&=\frac{-1357\pm\sqrt{1905557}}{2}\pmod{n}\end{align}
+$$
+
+Then use the CRT to obtain the 4 square roots mod $$n$$. The four possible messages are 21795, 7865, 32767, 18837.
 
 ## P2
 
