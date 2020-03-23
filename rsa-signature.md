@@ -39,8 +39,11 @@ In practical, both message and signature should be encrypted.
 
 But we have options to sign first or encrypt first.
 
-1. If$$N_A<N_B$$
-   * Alice signs first.
-   * $$c_1=m^{d_A}\pmod {N_A}$$
-   * $$c_2=m^{e_B}\pmod {N_B}$$
+1. If$$N_A<N_B$$, Alice should sign first.
+   * Alice:
+     * $$c_1=m^{d_A}\pmod {N_A}$$
+     * $$c_2=m^{e_B}\pmod {N_B}$$
+   * Bob:
+     * $$c_1=(c_2)^{d_B}\pmod {N_B}$$
+     * $$m=c_1^{e_A}\pmod {N_A}$$
 
