@@ -6,7 +6,7 @@ Based on intractability of the integer factor factorization problem.
 
 ## Algorithm
 
-* $$p,q$$: a large prime integer, _**private**_
+* $$p,q$$: large prime integers, _**private**_
 * $$N$$: compute$$N=pq$$, _**public**_
 * _\*\*\*\*_$$\Phi(N)$$: compute $$\Phi(N)=(p-1)(q-1)$$, _**private**_
 * $$e$$: choose a random integer $$e: 1< e < \Phi(N) $$, such that gcd$$(e,\Phi(N))=1$$, _**public**_

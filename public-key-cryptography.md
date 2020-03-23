@@ -10,5 +10,5 @@
 
 A function $$f: \{0,1\}^* \rightarrow \{0,1\}$$ __ is a trapdoor one-way function iff $$f(x)$$ is a one-way function; however, given some extra information it becomes feasible to compute $$f^{-1}$$.
 
-Public key cryptography relies on trapdoor one-way functions
+Public key cryptography relies on trapdoor one-way functions.
 

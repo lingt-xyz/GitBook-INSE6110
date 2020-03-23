@@ -30,7 +30,7 @@ $$(m^{a_1b_1a_2}\pmod p)^{b_2}\pmod p\equiv m^{a_1b_1a_2b_2}\pmod p\equiv m$$
 
 ### Algorithm
 
-* $$p$$, a _**large**_ prime integer, _**public**_
+* $$p$$, a large prime integer, _**public**_
 * $$g$$, a primitive root mod $$p$$\(also called a generator\), _**public**_
 * Key $$K_{ab}$$is then obtained by both parties calculating:
   * $$a,b$$ are private to Alice and Bob respectively
