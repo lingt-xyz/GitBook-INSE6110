@@ -6,7 +6,7 @@ Message expansion: the ciphertext is twice as big as the original message.
 
 Uses randomization, each message has $$p-1$$ possible different encryptions.
 
-## Algorithm
+## Key generation
 
 * $$p$$: a large prime integer.
 * $$g$$: a primitive root mod $$p$$\(also called a generator\).
