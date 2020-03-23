@@ -16,11 +16,19 @@ Solution
 
 Consider a $$(4,3)$$ Shamir secret sharing scheme with $$p=17$$. Show how the secret can be recovered from the following shares: $$(1,10), (2,16)$$, and $$(3,2)$$.
 
-Form 3 equations in 3 unknowns. 10=a0+a1+a2 mod 17 16=a0+2a1+4a2 mod 17 2=a0+3 a1+9a2 mod 17 =&gt; a0=1, a1=2 and a2=7. Thus the secret =a0=1
+#### Solution
+
+Form 3 equations in 3 unknowns. 
+
+$$\begin{cases}10=a_0+a_1+a_2 \pmod {17}\\ 16=a_0+2a_1+4a_2 \pmod {17}\\ 2=a_0+3 a_1+9a_2 \pmod {17}\end{cases}\Rightarrow\begin{cases}a_0=1\\a_1=2\\a_2=7\end{cases}$$ 
+
+Thus the secret $$a_0=1$$
 
 ## P3
 
 Consider ElGamal signature scheme as described in lecture. In practical applications, explain what the signer should do if “S” turns out to be equal to zero. Why?
+
+#### Solution
 
 Change the random number.
 
