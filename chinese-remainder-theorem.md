@@ -12,10 +12,8 @@ $$
 has a unique solution for$$x\pmod {pq}$$, which is
 
 $$
-x=aqq'+bpp'\pmod{pq}
+x=\big(aq(q^{-1}\bmod{p})+bp(p^{-1}\bmod{q})\big)\bmod{pq}
 $$
-
-where $$q'=q^{-1}\pmod{p}$$and $$p'=p^{-1}\pmod{q}$$.
 
 ## General form
 
@@ -31,10 +29,10 @@ $$
 has a unique solution for $$x\pmod {m_1m_2\cdots m_n}$$, which is
 
 $$
-x=\Bigg(\sum_{i=1}^{n}{a_ib_ib_i'\Bigg)}\pmod{m_1m_2\cdots m_n}
+x=\Bigg(\sum_{i=1}^{n}{a_ib_i({b_i}^{-1}\bmod{m_i})\Bigg)}\pmod{m_1m_2\cdots m_n}
 $$
 
- where $$b_i = \frac{m_1m_2\cdots m_n}{m_i}$$ and $$b_i' = {b_i}^{-1}\pmod{m_i}$$.
+ where $$b_i = \frac{m_1m_2\cdots m_n}{m_i}$$.
 
 ## Examples
 
