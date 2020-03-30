@@ -38,7 +38,9 @@ $$
 | 7 | 1 | $$1-(-1)\times16=17$$ |
 | 5 | 1 | $$-1-17\times1=-18$$ |
 | 2 | 2 | $$17-(-18)\times1=35$$ |
-| 1 |  | $$-18-35\times2=-88$$ |
+| 1 |  | $$-18-35\times2=-88=a_2$$ |
+
+$$211a_1+199a_2=1\Rightarrow 211a_1-88\times199=1\Rightarrow a_1=83$$
 
 Then use the CRT to obtain the 4 square roots mod $$n$$. The four possible messages are 21795, 7865, 32767, 18837.
 
