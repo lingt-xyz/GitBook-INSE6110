@@ -97,7 +97,7 @@ Check $$gcd(e_1,e_2)=1$$
 | 3 | 2 | $$0-1\times2=-2$$ |
 | 1 |  | $$1-(-2)\times2=5$$ |
 
-$$5\times7-2\times17=1\Rightarrow a_1=5,a_2=-2$$
+$$a_1e_1\times a_2e_2=5\times7-2\times17=1\Rightarrow a_1=5,a_2=-2$$
 
 $$\begin{align}m&=c_1^{a_1}\times c_2^{a_2}\mod N\\&=42^5\times 9^{-2}\mod 143\\&=100\times 81^{-1}\mod 143\\&=100\times 113\mod 143\\&=3\end{align}$$
 
