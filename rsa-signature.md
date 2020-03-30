@@ -29,7 +29,7 @@ Secret key: $$d$$. $$p$$ and $$q$$ must also remain secret.
 
 ### Multiplicative property
 
-See [https://inse6110.lingt.xyz/practice-3\#p6](https://inse6110.lingt.xyz/practice-3#p6)
+See [Practice 3 p6](https://inse6110.lingt.xyz/practice-3#p6)
 
 Sign $$h(m)$$to prevent this attack.
 
