@@ -109,7 +109,7 @@ Consider an RSA that is using twin primes. If $$n=10403$$ and $$e=8743$$. Show h
 
 $$p(p+2)=10403\Rightarrow p=101, q=103\Rightarrow\Phi(N)=10200\Rightarrow d=e^{-1}\mod \Phi(N)=7$$
 
-$$c^d\mod N=99^{7}\mod (101\times103)=9366$$
+$$m=c^d\mod N=99^{7}\mod (101\times103)=9366$$
 
 ## Q7
 
