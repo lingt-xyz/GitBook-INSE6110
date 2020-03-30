@@ -74,7 +74,7 @@ $$x\equiv 3\bmod7, x\equiv 8\bmod11$$
 
 $$3\times 11\times (11^{-1}\bmod 7)+8\times7\times(7^{-1}\bmod 11)=52$$
 
-## Q4: Common $$p$$ Attack
+## Q4: Common _p_ Attack
 
 Consider an RSA system in which the attacker knows that $$n_1$$ and $$n_2$$ has the form $$n_1=pq_1=16637 $$and $$n_2=pq_2=17399$$. Show how the attacker can break this system.
 
