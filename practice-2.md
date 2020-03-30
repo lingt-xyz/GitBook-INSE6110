@@ -74,7 +74,7 @@ $$x\equiv 3\bmod7, x\equiv 8\bmod11$$
 
 $$3\times 11\times (11^{-1}\bmod 7)+8\times7\times(7^{-1}\bmod 11)=52$$
 
-## Q4
+## Q4: Common $$p$$ Attack
 
 Consider an RSA system in which the attacker knows that $$n_1$$ and $$n_2$$ has the form $$n_1=pq_1=16637 $$and $$n_2=pq_2=17399$$. Show how the attacker can break this system.
 
@@ -101,7 +101,7 @@ $$\begin{align}m&=c_1^{a_1}\times c_2^{a_2}\mod N\\&=42^5\times 9^{-2}\mod 143\\
 
 Check $$3^7\mod 143=42, 3^{17}\mod 143=9$$
 
-## Q6
+## Q6: Twin Prime Attach
 
 Consider an RSA that is using twin primes. If $$n=10403$$ and $$e=8743$$. Show how the adversary can recover the message corresponding to $$c=99$$.
 
