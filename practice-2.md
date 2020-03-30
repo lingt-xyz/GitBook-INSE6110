@@ -82,11 +82,9 @@ $$gcd(n_1,n_2)=127\Rightarrow p=127,q_1=131,q_2=137$$
 
 $$e$$is public, $$n_1,n_2$$are known, then $$d_1,d_2$$ can be computed.
 
-## Q5
+## Q5: Common Modulus Attack
 
 Consider an RSA system with $$N=143, e_1=7$$ and $$e_2=17$$. Suppose the same message $$m$$ was sent to the two users above and the attacker observed the ciphertext $$c_1=42$$ and $$c_2=9$$. Show how the attacker can recover the message.
-
-This is an example of the common modulus attack.
 
 Check $$gcd(e_1,e_2)=1$$
 
@@ -111,13 +109,13 @@ $$p(p+2)=10403\Rightarrow p=101, q=103\Rightarrow\Phi(N)=10200\Rightarrow d=e^{-
 
 $$m=c^d\mod N=99^{7}\mod (101\times103)=9366$$
 
-## Q7
+## Q7: **Low Exponent Attack**
 
 Consider an RSA system where the public key of three users \(i.e., $$(n,e)$$\) are given by: $$(319,3), (697,3)$$ and $$(1081,3)$$. If the same message was sent to the three users. Show how the attacker can recover $$m$$ by observing the ciphertexts $$c_1=128, c_2=34$$ and $$c_3=589$$.
 
 $$c\equiv m^e\mod N\Rightarrow c\equiv m^3\mod N\Rightarrow m^3=c\mod N$$
 
-This is an example of the low exponent attack. The attacker uses the CRT to solve for $$m^3\mod (n_1 n_2 n_3)$$. Just denote $$m^3$$ by $$x$$. Then this is equivalent to solving for $$x$$ that satisfies:
+The attacker uses the CRT to solve for $$m^3\mod (n_1 n_2 n_3)$$. Just denote $$m^3$$ by $$x$$. Then this is equivalent to solving for $$x$$ that satisfies:
 
 $$\begin{cases} x=128 \mod 319 \\  x=34 \mod 697 \\  x=589 \mod 1081 \end{cases}$$
 
