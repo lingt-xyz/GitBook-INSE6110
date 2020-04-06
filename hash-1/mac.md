@@ -20,7 +20,7 @@ description: Message Authentication Code
 * $$k$$: private key
 * $$h_k$$: hash function using the private key $$k$$
 
-## Encryption
+### Encryption
 
 Sender sends $$m$$and $$h_k(m)$$.
 
