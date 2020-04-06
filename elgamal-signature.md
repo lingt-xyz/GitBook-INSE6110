@@ -24,15 +24,15 @@ The signature is $$(r,s)$$.
 
 One can verify that a signature $$(r,s)$$ is a valid signature for a message $$m$$ as follows:
 
-* The signature is valid if and only if $$a^m\equiv y^{r}r^{s}{\pmod {p}}$$.
+* The signature is valid if and only if $$g^m\equiv y^{r}r^{s}{\pmod {p}}$$.
 
 ## Correctness
 
-The computation of $$s$$ during signature generation implies $$h(m)\,\equiv \,xr+sk{\pmod {p-1}}$$.
+The computation of $$s$$ during signature generation implies $$m\equiv sk+ar{\pmod {p-1}}$$.
 
 Hence [Fermat's little theorem](https://inse6110.lingt.xyz/fermats-little-theorem) implies
 
 $$
-\begin{aligned}g^{h(m)}&\equiv g^{xr}g^{ks}\\&\equiv (g^{x})^{r}(g^{k})^{s}\\&\equiv (y)^{r}(r)^{s}{\pmod {p}}.\\\end{aligned}
+\begin{aligned}g^{m}&\equiv g^{xr}g^{ks}\\&\equiv (g^{x})^{r}(g^{k})^{s}\\&\equiv (y)^{r}(r)^{s}{\pmod {p}}.\\\end{aligned}
 $$
 
