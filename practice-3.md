@@ -81,7 +81,13 @@ $$s=0\Rightarrow (h(m)-xr)k^{-1}{\pmod {p-1}}=0\Rightarrow x=h(m)\cdot r^{-1}\pm
 
 ## P4
 
-Suppose that Alice is using the ElGamal Signature Scheme. In order to save time in generating the random numbers $$k$$ that are used to sign messages, Alice chooses an initial random value $$k_0$$ and then signs the $$i$$th message using the value $$k_i=k_0+2i \pmod p$$ \(therefore $$k_i=k_{i-1} + 2 \pmod p$$ for all $$i\geq1$$. Suppose that an attacker observes two consecutive signed messages, say $$\big(x_i,\text{sig}(x_i)\big)$$ and$$\big (x_{i+1},\text{sig}(x_{i+1})\big)$$. Given this information, describe how the attacker can easily compute Alice’s secret key $$x$$.
+Suppose that Alice is using the ElGamal Signature Scheme. In order to save time in generating the random numbers $$k$$ that are used to sign messages, Alice chooses an initial random value $$k_0$$ and then signs the $$i$$th message using the value $$k_i=k_0+2i \pmod p$$ \(therefore $$k_i=k_{i-1} + 2 \pmod p$$ for all $$i\geq1$$. Suppose that an attacker observes two consecutive signed messages, say $$\big(m_i,\text{sig}(m_i)\big)$$ and$$\big (m_{i+1},\text{sig}(m_{i+1})\big)$$. Given this information, describe how the attacker can easily compute Alice’s secret key $$x$$.
+
+$$
+s=\big(m-xr\big)k^{-1}{\pmod {p-1}} \\\Rightarrow\begin{cases}\text{sig}(m_1)=(m_1-xr_1){k_1}^{-1} \pmod {p-1}\\ \text{sig}(m_{2})=(m_{2}-xr_2){k_{2}}^{-1} \pmod {p-1}\end{cases}\\\Rightarrow\begin{cases}{k_1}\cdot\text{sig}(m_1)=(m_1-xr_1) \pmod {p-1}\\ {k_{2}}\cdot\text{sig}(m_{2})=(m_{2}-xr_2) \pmod {p-1}\end{cases}\\\Rightarrow\begin{cases}{k_1}\cdot\text{sig}(m_1)=(m_1-xr_1) \pmod {p-1}\\ ({k_1}+2)\cdot\text{sig}(m_{2})=(m_{2}-xr_2) \pmod {p-1}\end{cases}
+$$
+
+Two unknowns $$k_1, x$$, we can solve it directly.
 
 ## P5
 
