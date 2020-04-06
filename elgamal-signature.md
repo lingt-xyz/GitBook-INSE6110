@@ -13,9 +13,9 @@ As in ElGamal encryption:
 
 A message $$m$$ is signed as follows:
 
-* Choose an integer $$k$$ randomly from $$\{1\ldots p-1\}$$ with $$k$$ relatively prime to $$p-1$$.
+* Choose an integer $$k$$ randomly from $$\{1,2,\ldots, p-1\}$$ with $$k$$ relatively prime to $$p-1$$.
 * Compute $$r=g^{k}{\pmod {p}}$$.
-* Compute $$s=(h(m)-xr)k^{-1}{\pmod {p-1}}$$.
+* Compute $$s=(h(m)-ar)k^{-1}{\pmod {p-1}}$$.
 * In the unlikely event that $$s=0$$ start again with a different random $$k$$.
 
 The signature is $$(r,s)$$.
