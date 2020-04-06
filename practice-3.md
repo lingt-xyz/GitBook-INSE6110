@@ -16,11 +16,11 @@ $$
 \begin{align}
 c&=x^2+Bx\pmod{n}\\
  &\Rightarrow x^2+Bx-c=0\pmod{n} \\
-x&=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\pmod{n}\\
-&=\frac{-B\pm\sqrt{B^2+4c}}{2}\pmod{n}\\
-&=\frac{-1357\pm\sqrt{{1357}^2+4\times16027}}{2}\pmod{pq}\\
-&=\frac{-1357\pm\sqrt{1905557}}{2}\pmod{199\times211}\\
-&=\frac{-1357\pm\sqrt{16052}}{2}\pmod{199\times211} \end{align}
+x&=\frac{-b+\sqrt{b^2-4ac}}{2a}\pmod{n}\\
+&=\frac{-B+\sqrt{B^2+4c}}{2}\pmod{n}\\
+&=\frac{-1357+\sqrt{{1357}^2+4\times16027}}{2}\pmod{pq}\\
+&=\frac{-1357+\sqrt{1905557}}{2}\pmod{199\times211}\\
+&=\frac{-1357+\sqrt{16052}}{2}\pmod{199\times211} \end{align}
 $$
 
 We need to solve $$\sqrt{16052}\bmod (199\times211)$$and $$2^{-1}\bmod(199\times211)$$
@@ -30,8 +30,8 @@ $$
 $$
 
 $$
-\begin{align}&\begin{cases}m_{p}=c^{{\frac {1}{4}}(p+1)}{\pmod {p}}\\m_{q}=c^{{\frac {1}{4}}(q+1)}{\pmod {q}}\end{cases}\\\Rightarrow&\begin{cases}m_{199}={16052}^{{\frac {1}{4}}(199+1)}{\pmod {199}}\\m_{211}={16052}^{{\frac {1}{4}}(211+1)}{\pmod {211}}\end{cases}\\
-\Rightarrow&\begin{cases}m_{199}={132}^{50}{\pmod {199}}\\m_{211}={16}^{53}{\pmod {211}}\end{cases}\\\Rightarrow&\begin{cases}m_{199}=172{\pmod {199}}\\m_{211}=4{\pmod {211}}\end{cases}\end{align}
+\begin{align}&\begin{cases}m_{p}=\pm c^{{\frac {1}{4}}(p+1)}{\pmod {p}}\\m_{q}=\pm c^{{\frac {1}{4}}(q+1)}{\pmod {q}}\end{cases}\\\Rightarrow&\begin{cases}m_{199}=\pm {16052}^{{\frac {1}{4}}(199+1)}{\pmod {199}}\\m_{211}=\pm {16052}^{{\frac {1}{4}}(211+1)}{\pmod {211}}\end{cases}\\
+\Rightarrow&\begin{cases}m_{199}=\pm {132}^{50}{\pmod {199}}\\m_{211}=\pm {16}^{53}{\pmod {211}}\end{cases}\\\Rightarrow&\begin{cases}m_{199}=\pm 172{\pmod {199}}\\m_{211}=\pm 4{\pmod {211}}\end{cases}\end{align}
 $$
 
 | $$R_i$$ | $$D_i$$ | $$S_i$$ |
@@ -45,6 +45,15 @@ $$
 | 1 |  | $$-18-35\times2=-88=a_2$$ |
 
 $$211a_1+199a_2=1\Rightarrow 211a_1-88\times199=1\Rightarrow a_1=83$$
+
+$$
+\begin{align}&\begin{cases}m_{199}=172{\pmod {199}}\\m_{211}=-4{\pmod {211}}\end{cases}\\
+m&=\big(172\times 211 \times {211}^{-1}\bmod 199-4\times 199 \times {199}^{-1}\bmod 211 \big)\bmod 199\times 211 \\
+&=\big(172\times 211 \times a_1-4\times 199 \times a_2 \big)\bmod 199\times 211\\
+&=\big(172\times 211 \times 83-4\times 199 \times (-88) \big)\bmod 199\times 211\\
+&=17087
+\end{align}
+$$
 
 $$
 \begin{align}&\begin{cases}m_{199}=172{\pmod {199}}\\m_{211}=4{\pmod {211}}\end{cases}\\
