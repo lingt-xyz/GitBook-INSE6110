@@ -22,7 +22,7 @@ description: Message Authentication Code
 
 ## Encryption
 
-Sender sends $$m$$and $$k_k(m)$$.
+Sender sends $$m$$and $$h_k(m)$$.
 
 ## CBC MAC
 
