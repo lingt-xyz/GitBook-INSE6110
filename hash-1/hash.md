@@ -16,11 +16,11 @@ A hash function $$h:\{0,1\}*→ \{0,1\}^m$$
 
 ## Some popular hash functions
 
-### MD5
+### MD5 \(broken\)
 
 128-bit output
 
-### SHA-1
+### SHA-1 \(broken\)
 
 160-bit output
 
