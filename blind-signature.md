@@ -15,5 +15,5 @@ Blind signatures are typically employed in privacy-related protocols where the s
 
 $$r^{ed}\equiv r{\pmod {N}}$$
 
-$$s\equiv s'\cdot r^{-1}\equiv (m')^{d}r^{-1}\equiv m^{d}r^{ed}r^{-1}\equiv m^{d}rr^{-1}\equiv m^{d}{\pmod {N}}$$
+$$s\equiv s'\cdot r^{-1}\equiv (m')^{d}r^{-1}\equiv (mr^e)^{d}r^{-1}\equiv m^{d}r^{ed}r^{-1}\equiv m^{d}rr^{-1}\equiv m^{d}{\pmod {N}}$$
 
