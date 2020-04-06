@@ -97,11 +97,7 @@ Show that given a legitimate ElGamal signature $$(s,r)$$ on a given message $$m$
 
 Since $$(s,r)$$ is a valid signature on $$m$$, then we have $$g^ m = y^r r^s = g^{xr+sk} \pmod p$$. 
 
-Now to forge the signature on $$m'$$, we need to have $$g^{m'} = g^{am+abs}\pmod p=g^{a(xr+sk)+abs}=g^{axr+ask+abs} \pmod p = y^{r'} r'^{s'} \pmod p$$.
-
-By comparing both sides, we have $$r'= ar \pmod p=g^{k+b} \pmod p$$, $$s'=as \pmod {p-1}$$.??
-
-You can verify that it works by doing the following: $$y^{r'} r'^{s'} = y^{ra} r'^{as} = g^{xra} {(g^{k+b})}^{as} = g^{xra+ask+asb}=g^{m'} \pmod p$$
+If the attacker chooses $$r'= ar\pmod p, s'=as \pmod {p-1}$$, then $$y^{r'} r'^{s'}= y^{ar} (ar)^{as} = g^{xar} {(g^{b+k})}^{as} = g^{xar+asb+ask}=g^{a(xr+sk)+abs}=g^{m'} \pmod p$$
 
 ## P6
 
