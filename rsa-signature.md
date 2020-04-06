@@ -28,7 +28,7 @@ Secret key: $$d$$. $$p$$ and $$q$$ must also remain secret.
 
 ## Cryptanalysis
 
-### Multiplicative property
+### Multiplicative property \(known message attack\)
 
 For$$y_1=\text{sig}_k(x_1), y_2=\text{sig}_k(x_2)$$, if $$x_3=x_1\cdot x_2$$, then $$y_3=\text{sig}_k(x_3)=y_1\cdot y_2$$.
 
