@@ -15,7 +15,7 @@ A message $$m$$ is signed as follows:
 
 * Choose an integer $$k$$ randomly from $$\{1,2,\ldots, p-1\}$$ with $$k$$ relatively prime to $$p-1$$.
 * Compute $$r=g^{k}{\pmod {p}}$$.
-* Compute $$s=k^{-1}\big(h(m)-xr\big){\pmod {p-1}}$$.
+* Compute $$s=\big(h(m)-xr\big)k^{-1}{\pmod {p-1}}$$.
 * In the unlikely event that $$s=0$$ start again with a different random $$k$$.
 
 The signature is $$(r,s)$$.
@@ -28,7 +28,7 @@ One can verify that a signature $$(r,s)$$ is a valid signature for a message $$m
 
 ## Correctness
 
-The computation of $$s$$ during signature generation implies $$h(m)\equiv sk+xr{\pmod {p-1}}$$.
+The computation of $$s$$ during signature generation implies $$h(m)\equiv xr+sk{\pmod {p-1}}$$.
 
 Hence [Fermat's little theorem](https://inse6110.lingt.xyz/fermats-little-theorem) implies
 
