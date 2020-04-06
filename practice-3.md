@@ -48,7 +48,7 @@ $$211a_1+199a_2=1\Rightarrow 211a_1-88\times199=1\Rightarrow a_1=83$$
 
 $$
 \begin{align}&\begin{cases}m_{199}=172{\pmod {199}}\\m_{211}=4{\pmod {211}}\end{cases}\\
-m&=\big(172\times 211 \times {211}^{-1}\bmod 199+4\times 199 \times {199}^{-1}\bmod 211 \big)\bmod 199\times 211 \\
+m_1&=\big(172\times 211 \times {211}^{-1}\bmod 199+4\times 199 \times {199}^{-1}\bmod 211 \big)\bmod 199\times 211 \\
 &=\big(172\times 211 \times a_1+4\times 199 \times a_2 \big)\bmod 199\times 211\\
 &=\big(172\times 211 \times 83+4\times 199 \times (-88) \big)\bmod 199\times 211\\
 &=2958
@@ -57,7 +57,7 @@ $$
 
 $$
 \begin{align}&\begin{cases}m_{199}=172{\pmod {199}}\\m_{211}=-4{\pmod {211}}\end{cases}\\
-m&=\big(172\times 211 \times {211}^{-1}\bmod 199-4\times 199 \times {199}^{-1}\bmod 211 \big)\bmod 199\times 211 \\
+m_2&=\big(172\times 211 \times {211}^{-1}\bmod 199-4\times 199 \times {199}^{-1}\bmod 211 \big)\bmod 199\times 211 \\
 &=\big(172\times 211 \times a_1-4\times 199 \times a_2 \big)\bmod 199\times 211\\
 &=\big(172\times 211 \times 83-4\times 199 \times (-88) \big)\bmod 199\times 211\\
 &=17087
