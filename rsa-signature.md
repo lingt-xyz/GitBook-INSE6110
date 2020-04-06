@@ -17,6 +17,7 @@ Secret key: $$d$$. $$p$$ and $$q$$ must also remain secret.
 ## RSA Signature
 
 1. Signing the message $$m$$
+   * Must verify $$0 <m <N$$.
    * Use private key $$d$$, compute $$S_d=m^d\pmod N$$.
 2. Verifying signature$$S$$
    * User public key $$(e,N)$$, compute $$S_e=\big(m^d\pmod N\big)^e\pmod N=m$$
@@ -28,6 +29,10 @@ Secret key: $$d$$. $$p$$ and $$q$$ must also remain secret.
 ## Cryptanalysis
 
 ### Multiplicative property
+
+For$$y_1=\text{sig}_k(x_1), y_2=\text{sig}_k(x_2)$$, if $$x_3=x_1\cdot x_2$$, then $$y_3=\text{sig}_k(x_3)=y_1\cdot y_2$$.
+
+$$y_3=\text{sig}_k(x_3)={x_3}^d\pmod N=(x_1\cdot x_2)^d\pmod N={x_1}^d\pmod N\cdot {x_2}^d\pmod N=y_1\cdot y_2$$
 
 See [Practice 3 p6](https://inse6110.lingt.xyz/practice-3#p6)
 
