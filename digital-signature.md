@@ -26,3 +26,7 @@
 
 A signature scheme **cannot** be perfectly secure; it can only be **computationally** **secure**. Given enough time and adversary can always forge Alice’s signature on any message.
 
+## Digital Signatures and Hash
+
+Very often digital signatures are used with hash functions, hash of a message is signed, instead of the message.
+
