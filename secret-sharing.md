@@ -45,5 +45,5 @@ $$m=3$$so polynomial is degree $$2$$; $$F(x)=(ax^2+bx+M) \mod M$$
 
 ## Sharing Secret with Cheaters
 
-Hash shadows.
+Hash shadows, _**public**_
 
