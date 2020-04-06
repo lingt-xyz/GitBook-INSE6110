@@ -4,7 +4,7 @@
 
 ## General Information
 
-Monday: 17:45-20:15, H- 557
+Monday: 17:45-20:15, H-557
 
 Ayda Basyouni, Ph.D., Concordia Institute for Information Systems Engineering, ENCS.
 
