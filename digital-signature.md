@@ -24,5 +24,5 @@
 * Selective forgery: adversary is able to create valid signatures on a message chosen by someone else, with a significant probability. 
 * Existential forgery: adversary can create a pair \(message, signature\), s.t. the signature of the message is valid. 
 
-A signature scheme cannot be perfectly secure; it can only be computationally secure. Given enough time and adversary can always forge Alice’s signature on any message.
+A signature scheme **cannot** be perfectly secure; it can only be **computationally** **secure**. Given enough time and adversary can always forge Alice’s signature on any message.
 
