@@ -29,6 +29,12 @@ The message $$m$$ can be recovered from the ciphertext $$c$$ by taking its squar
 
 One of these four values is the original plaintext$$m$$, although which of the four is the correct one cannot be determined without additional information.
 
+{% hint style="info" %}
+Why $$a_1\cdot p+a_2\cdot q=1$$? It simplifies the calculation of $$p^{-1}$$and $$q^{-1}$$. 
+
+* We can calculate them directly without $$a_1$$and $$a_2$$.
+{% endhint %}
+
 ## Finding square root$$\pmod N$$
 
 Given $$c$$, finds out $$x$$ such that $$x^2 = c \pmod N$$.
