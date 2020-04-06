@@ -20,7 +20,7 @@ x&=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\pmod{n}\\
 &=\frac{-B\pm\sqrt{B^2+4c}}{2}\pmod{n}\\
 &=\frac{-1357\pm\sqrt{{1357}^2+4\times16027}}{2}\pmod{pq}\\
 &=\frac{-1357\pm\sqrt{1905557}}{2}\pmod{199\times211}\\
-&=\frac{-1357\pm\sqrt{16052}}{2}\pmod{199\times211}\end{align}
+&=\frac{-1357\pm\sqrt{16052}}{2}\pmod{199\times211} \end{align}
 $$
 
 We need to solve $$\sqrt{16052}\bmod (199\times211)$$and $$2^{-1}\bmod(199\times211)$$
