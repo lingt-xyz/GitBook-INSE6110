@@ -4,16 +4,16 @@
 
 As in ElGamal encryption:
 
-* $$p$$: a large prime integer; public.
-* $$g$$: a primitive root mod $$p$$\(also called a generator\); public.
-* $$x$$: choose an integer $$x$$randomly from $$\{1,2,\dots,p-2\}$$; private.
-* $$y$$: compute $$y=g^x\pmod p$$; public.
+* $$p$$: a large prime integer; _**public**_.
+* $$g$$: a primitive root mod $$p$$\(also called a generator\); _**public**_.
+* $$a$$: choose an integer $$a$$randomly from $$\{1,2,\dots,p-2\}$$; _**private**_.
+* $$y$$: compute $$y=g^a\pmod p$$; _**public**_.
 
 ## Signing
 
 A message $$m$$ is signed as follows:
 
-* Choose an integer $$k$$ randomly from $$\{2\ldots p-2\}$$ with $$k$$ relatively prime to $$p-1$$.
+* Choose an integer $$k$$ randomly from $$\{1\ldots p-1\}$$ with $$k$$ relatively prime to $$p-1$$.
 * Compute $$r=g^{k}{\pmod {p}}$$.
 * Compute $$s=(h(m)-xr)k^{-1}{\pmod {p-1}}$$.
 * In the unlikely event that $$s=0$$ start again with a different random $$k$$.
