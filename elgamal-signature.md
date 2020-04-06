@@ -24,7 +24,7 @@ The signature is $$(r,s)$$.
 
 One can verify that a signature $$(r,s)$$ is a valid signature for a message $$m$$ as follows:
 
-* The signature is valid if and only if $$g^{h(m)}\equiv y^{r}r^{s}{\pmod {p}}$$.
+* The signature is valid if and only if $$a^m\equiv y^{r}r^{s}{\pmod {p}}$$.
 
 ## Correctness
 
