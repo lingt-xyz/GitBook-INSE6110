@@ -50,7 +50,7 @@
 
 ## Block Cipher
 
-* [SPN](block-cipher/spn.md)
+* [SP Network](block-cipher/spn.md)
 * [Feistel Structure](block-cipher/feistel-structure.md)
 * [Review](review.md)
 
