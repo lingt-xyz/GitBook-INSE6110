@@ -59,8 +59,8 @@ The attacker is actively involved in inserting, deleting, or modifying data. It 
 ## Attacks on encryption schemes
 
 * Ciphertext-only attack: deduce the decryption key or plaintext by only observing ciphertext. 
-* Known-plaintext attack： using a quantity of plaintext and corresponding ciphertext. 
-* Chosen-plaintext attack： chooses plaintext and is then given corresponding ciphertext. 
+* Known-plaintext attack: using a quantity of plaintext and corresponding ciphertext. 
+* Chosen-plaintext attack: chooses plaintext and is then given corresponding ciphertext. 
 * Adaptive chosen-plaintext attack: chosen-plaintext attack where the choice of plaintext may depend on the ciphertext received from previous requests. 
 * Chosen-ciphertext attack: selects the ciphertext and is then given the corresponding plaintext. 
 * Adaptive chosen-ciphertext attack: chosen-ciphertext attack where the choice of ciphertext may depend on the plaintext received from previous requests.
