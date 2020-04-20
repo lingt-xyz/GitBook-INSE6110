@@ -1,6 +1,6 @@
 # Feistel Structure
 
-![](../.gitbook/assets/feistel_structure.png)
+![](../../.gitbook/assets/feistel_structure.png)
 
 ## Overview
 

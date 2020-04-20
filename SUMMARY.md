@@ -54,8 +54,8 @@
 ## Block Cipher
 
 * [Symmetric Key](block-cipher/symmetric-key.md)
-* [SP Network](block-cipher/spn/README.md)
-  * [DES](block-cipher/spn/des.md)
-* [Feistel Structure](block-cipher/feistel-structure.md)
+* [SP Network](block-cipher/spn.md)
+* [Feistel Structure](block-cipher/feistel-structure/README.md)
+  * [DES](block-cipher/feistel-structure/des.md)
 * [Review](review.md)
 
