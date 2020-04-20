@@ -25,7 +25,7 @@ The message $$m$$ can be recovered from the ciphertext $$c$$ by taking its squar
 
 1. Compute the square root of $$c$$ modulo $$p$$ and $$q$$ using these formulas:$$\begin{aligned}m_{p}&=c^{{\frac {1}{4}}(p+1)}{\bmod {p}}\\m_{q}&=c^{{\frac {1}{4}}(q+1)}{\bmod {q}}\end{aligned}$$.
 2. Use the [extended Euclidean algorithm](https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm) to find $$a_1$$ and $$a_2$$ such that $$a_1\cdot p+a_2\cdot q=1$$.
-3. Use the [Chinese remainder theorem](https://inse6110.lingt.xyz/chinese-remainder-theorem) to find the four square roots of $$c$$ modulo $$n$$:$$ {\begin{aligned}r_{1}&=\left(a_1\cdot p\cdot m_{q}+a_2\cdot q\cdot m_{p}\right){\bmod {n}}\\r_{2}&=n-r_{1}\\r_{3}&=\left(a_1\cdot p\cdot m_{q}-a_2\cdot q\cdot m_{p}\right){\bmod {n}}\\r_{4}&=n-r_{3}\end{aligned}}$$
+3. Use the [Chinese remainder theorem](https://inse6110.lingt.xyz/chinese-remainder-theorem) to find the four square roots of $$c$$ modulo $$n$$:$$ {\begin{aligned}r_{1}&=\left(a_1\cdot p\cdot m_{q}+a_2\cdot q\cdot m_{p}\right){\pmod {n}}\\r_{2}&=n-r_{1}\\r_{3}&=\left(a_1\cdot p\cdot m_{q}-a_2\cdot q\cdot m_{p}\right){\pmod {n}}\\r_{4}&=n-r_{3}\end{aligned}}$$
 
 One of these four values is the original plaintext$$m$$, although which of the four is the correct one cannot be determined without additional information.
 
