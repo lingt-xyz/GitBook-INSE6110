@@ -41,7 +41,7 @@ A secret is divided into $$n$$ pieces \(called the shadows\), such that combinin
 
 $$(n,3)$$ Threshold scheme
 
-$$m=3$$so polynomial is degree $$2$$; $$F(x)=(ax^2+bx+M) \mod M$$
+$$m=3$$so polynomial is degree $$2$$; $$F(x)=(ax^2+bx+M) \mod p$$
 
 ## Sharing Secret with Cheaters
 
