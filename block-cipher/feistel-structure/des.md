@@ -7,8 +7,10 @@ description: Data Encryption Standard
 ## Overview
 
 * Use the Feistel structure
-  * Block length $$n=64$$, 
-  * Key size $$k=56$$.
+  * Block length $$n=64$$bits
+  * Key size $$k=56$$bits
+    * There are extra $$8$$parity bits acting as error checking.
+    * In total, it is still $$64$$bits
   * Number of rounds is $$16$$.
 
 ## S-box \(substitution-box\)
