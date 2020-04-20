@@ -18,5 +18,12 @@ description: Data Encryption Standard
 
 ![](../../.gitbook/assets/s_box.png)
 
+## Cryptanalysis
 
+### Brute force
+
+* Try all $$2^{56}$$ possible keys
+* Requires no memory, Time-consuming
+
+## Double/Triple encryption \(DES\)
 

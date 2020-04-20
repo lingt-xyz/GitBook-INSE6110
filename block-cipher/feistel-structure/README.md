@@ -25,3 +25,7 @@
 * Subkey generation algorithm & round function:
   * greater complexity should lead to greater cryptanalysis resistance
 
+## Advantages 
+
+## Disadvantages
+
