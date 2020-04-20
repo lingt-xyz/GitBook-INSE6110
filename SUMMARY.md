@@ -2,7 +2,6 @@
 
 * [Outline](README.md)
 * [Overview of Cryptology](overview-of-cryptology.md)
-* [Symmetric Key](symmetric-key.md)
 * [Project](project-1.md)
 * [Practice 1](practice-1.md)
 * [Practice 2](practice-2.md)
@@ -51,6 +50,7 @@
 ## PKI
 
 * [Public Key Infrastructure](pki/public-key-infrastructure.md)
+* [Symmetric Key](symmetric-key.md)
 
 ## Block Cipher
 
