@@ -2,7 +2,7 @@
 
 ## 3-pass
 
-## Key generation
+### Key generation
 
 * $$p$$: a large prime integer; _**public**_
 * $$a_1,a_2$$: Alice's **private** keys
