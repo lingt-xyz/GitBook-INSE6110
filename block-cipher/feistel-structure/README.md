@@ -13,6 +13,7 @@
 
 * $$L_i=R_{i−1}$$
 * $$R_i=L_{i−1}⊕f(R_{i−1},K_i)$$
+* $$K_i$$is derived from cipher key $$K$$
 
 ## Feistel structure parameters
 
