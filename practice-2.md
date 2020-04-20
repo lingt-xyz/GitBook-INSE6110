@@ -101,7 +101,7 @@ $$\begin{align}m&=c_1^{a_1}\times c_2^{a_2}\mod N\\&=42^5\times 9^{-2}\mod 143\\
 
 Check $$3^7\mod 143=42, 3^{17}\mod 143=9$$
 
-## Q6: Twin Prime Attach
+## Q6: Twin Prime Attack
 
 Consider an RSA that is using twin primes. If $$n=10403$$ and $$e=8743$$. Show how the adversary can recover the message corresponding to $$c=99$$.
 
