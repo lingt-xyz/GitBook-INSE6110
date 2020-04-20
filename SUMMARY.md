@@ -50,10 +50,10 @@
 ## PKI
 
 * [Public Key Infrastructure](pki/public-key-infrastructure.md)
-* [Symmetric Key](symmetric-key.md)
 
 ## Block Cipher
 
+* [Symmetric Key](block-cipher/symmetric-key.md)
 * [SP Network](block-cipher/spn/README.md)
   * [DES](block-cipher/spn/des.md)
 * [Feistel Structure](block-cipher/feistel-structure.md)
