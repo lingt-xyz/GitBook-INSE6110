@@ -103,7 +103,7 @@ Three possible approaches, all of them are equivalent to factoring $$n$$:
 
 ### Low exponent
 
-See [Practice 2 problem 7](https://inse6110.lingt.xyz/practice-2#q7)
+See [Practice 2 problem 7](https://inse6110.lingt.xyz/practice-2#q-7-low-exponent-attack)
 
 ### Common **Modulus**
 
