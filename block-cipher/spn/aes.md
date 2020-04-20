@@ -3,9 +3,9 @@
 ## Overview
 
 * Based on the SPN structure
-  * a variable block size: $$128,192, 256$$bits
-  * key size of $$128,192$$or $$256$$bits
-  * variable number of rounds: $$10,12,14$$
+  * Block size of$$128,192, 256$$bits
+  * Key size of$$128,192$$or $$256$$bits
+  * Number of rounds: $$10,12,14$$
     * AES -$$128 (n=10)$$
     * AES -$$192 (n=12)$$
     * AES -$$256 (n=14)$$
