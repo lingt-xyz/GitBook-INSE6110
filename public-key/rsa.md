@@ -55,7 +55,7 @@ The smaller the number of 1 bits, the better. Example: $$e= 2^{16} + 1 = 65537$$
 
 ## Speed up decryption
 
-See [Practice 2 problem 3](https://inse6110.lingt.xyz/practice-2#q3)
+See [Practice 2 problem 3](https://lingt-xyz.gitbook.io/inse6110/practice-2#q3)
 
 {% embed url="https://crypto.stackexchange.com/questions/2575/chinese-remainder-theorem-and-rsa" %}
 
@@ -103,7 +103,7 @@ Three possible approaches, all of them are equivalent to factoring $$n$$:
 
 ### Low exponent
 
-See [Practice 2 problem 7](https://inse6110.lingt.xyz/practice-2#q-7-low-exponent-attack)
+See [Practice 2 problem 7](https://lingt-xyz.gitbook.io/inse6110/practice-2#q-7-low-exponent-attack)
 
 ### Common **Modulus**
 
