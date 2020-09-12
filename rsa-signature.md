@@ -23,7 +23,7 @@ Secret key: $$d$$. $$p$$ and $$q$$ must also remain secret.
    * User public key $$(e,N)$$, compute $$S_e=\big(m^d\pmod N\big)^e\pmod N=m$$
 
 {% hint style="warning" %}
-* Better to sign the hash $$h(m)$$ than sign the message $$m$$.
+Better to sign the hash $$h(m)$$ than sign the message $$m$$.
 {% endhint %}
 
 ## Cryptanalysis
