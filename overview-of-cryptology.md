@@ -25,7 +25,8 @@ Cryptography is the science that enables Alice and Bob to communicate securely i
 
 #### Solution
 
-Protocols between Alice and Bob At least one of Alice or Bob needs to know more \(or can do more\) than Eve
+* Protocols between Alice and Bob.
+* At least one of Alice or Bob needs to know more \(or can do more\) than Eve.
 
 ## Terminology
 

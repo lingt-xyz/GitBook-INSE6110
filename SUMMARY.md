@@ -9,6 +9,8 @@
 
 ## Number Theory
 
+---
+
 * [Number Theory Problems](number-theory-problems.md)
 * [Modular multiplicative inverse](modular-multiplicative-inverse.md)
 * [Euclid's algorithm](euclids-algorithm.md)
@@ -41,6 +43,8 @@
 
 ## Signature
 
+---
+
 * [Digital Signature](digital-signature.md)
 * [RSA Signature](rsa-signature.md)
 * [ElGamal Signature](elgamal-signature.md)
@@ -58,5 +62,8 @@
   * [DES](block-cipher/feistel-structure/des.md)
 * [SPN](block-cipher/spn/README.md)
   * [AES](block-cipher/spn/aes.md)
+
+---
+
 * [Review](review.md)
 
