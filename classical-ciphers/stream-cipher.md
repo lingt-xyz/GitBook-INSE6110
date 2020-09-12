@@ -72,7 +72,7 @@ Substitution ciphers preserve language statistics.
 * Since $$\alpha^{-1}$$has to exist, only integer in $$\Bbb{Z}^{26}$$such that $$gcd(\alpha,26)=1$$can be selected.
   * The candidates are $$\{1,3,5,7,9,11,15,17,19,21,23,25\}$$.
 * Key space: $$26\times12=312$$
-* To calculate $$\alpha^{-1}$$, see [Modular multiplicative inverse](https://inse6110.lingt.xyz/modular-multiplicative-inverse).
+* To calculate $$\alpha^{-1}$$, see [Modular multiplicative inverse](https://lingt-xyz.gitbook.io/inse6110/modular-multiplicative-inverse).
 
 ### Cryptanalysis
 
