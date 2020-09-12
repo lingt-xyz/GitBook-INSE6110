@@ -30,7 +30,7 @@ One can verify that a signature $$(r,s)$$ is a valid signature for a message $$m
 
 The computation of $$s$$ during signature generation implies $$h(m)\equiv xr+sk{\pmod {p-1}}$$.
 
-Hence [Fermat's little theorem](https://inse6110.lingt.xyz/fermats-little-theorem) implies
+Hence [Fermat's little theorem](https://lingt-xyz.gitbook.io/inse6110/fermats-little-theorem) implies
 
 $$
 \begin{aligned}g^{h(m)}&\equiv g^{xr}g^{ks}\\&\equiv (g^{x})^{r}(g^{k})^{s}\\&\equiv (y)^{r}(r)^{s}{\pmod {p}}.\\\end{aligned}
