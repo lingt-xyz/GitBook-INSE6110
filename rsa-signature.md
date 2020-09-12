@@ -34,7 +34,7 @@ For$$y_1=\text{sig}_k(x_1), y_2=\text{sig}_k(x_2)$$, if $$x_3=x_1\cdot x_2$$, th
 
 $$y_3=\text{sig}_k(x_3)={x_3}^d\pmod N=(x_1\cdot x_2)^d\pmod N={x_1}^d\pmod N\cdot {x_2}^d\pmod N=y_1\cdot y_2$$
 
-See [Practice 3 p6](https://inse6110.lingt.xyz/practice-3#p6)
+See [Practice 3 p6](https://lingt-xyz.gitbook.io/inse6110/practice-3#p6)
 
 Sign $$h(m)$$to prevent this attack.
 
