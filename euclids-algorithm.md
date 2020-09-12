@@ -9,5 +9,5 @@ gcd(a,b)&=gcd(b, a\bmod b)
 \end{align}
 $$
 
-Examples see [Practice 1](https://inse6110.lingt.xyz/practice-1).
+Examples see [Practice 1](https://lingt-xyz.gitbook.io/inse6110/practice-1).
 
